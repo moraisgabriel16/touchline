@@ -1,0 +1,1947 @@
+{
+  "version": 1,
+  "filter": "nearest",
+  "sheets": {
+    "identity": {
+      "file": "identity-v1.png",
+      "width": 768,
+      "height": 640
+    },
+    "stadiums": {
+      "file": "stadiums-v1.png",
+      "width": 768,
+      "height": 640
+    },
+    "facilities": {
+      "file": "facilities-v1.png",
+      "width": 768,
+      "height": 640
+    },
+    "crowd": {
+      "file": "crowd-v1.png",
+      "width": 768,
+      "height": 640
+    },
+    "varzea": {
+      "file": "varzea-v1.png",
+      "width": 768,
+      "height": 640
+    },
+    "identity-coast": {
+      "file": "identity-coast-v1.png",
+      "width": 768,
+      "height": 640
+    },
+    "identity-city": {
+      "file": "identity-city-v1.png",
+      "width": 768,
+      "height": 640
+    }
+  },
+  "frames": {
+    "aurora.crest": {
+      "sheet": "identity",
+      "x": 71,
+      "y": 48,
+      "w": 50,
+      "h": 64,
+      "pivot": [
+        25,
+        32
+      ],
+      "source": {
+        "x": 63,
+        "y": 27,
+        "w": 218,
+        "h": 279
+      }
+    },
+    "aurora.home": {
+      "sheet": "identity",
+      "x": 256,
+      "y": 49,
+      "w": 64,
+      "h": 61,
+      "pivot": [
+        32,
+        30
+      ],
+      "source": {
+        "x": 334,
+        "y": 36,
+        "w": 276,
+        "h": 265
+      }
+    },
+    "aurora.away": {
+      "sheet": "identity",
+      "x": 448,
+      "y": 49,
+      "w": 64,
+      "h": 61,
+      "pivot": [
+        32,
+        30
+      ],
+      "source": {
+        "x": 639,
+        "y": 37,
+        "w": 279,
+        "h": 264
+      }
+    },
+    "aurora.flag": {
+      "sheet": "identity",
+      "x": 632,
+      "y": 44,
+      "w": 79,
+      "h": 72,
+      "pivot": [
+        39,
+        36
+      ],
+      "source": {
+        "x": 962,
+        "y": 45,
+        "w": 274,
+        "h": 249
+      }
+    },
+    "ferroviaria.crest": {
+      "sheet": "identity",
+      "x": 64,
+      "y": 208,
+      "w": 63,
+      "h": 64,
+      "pivot": [
+        31,
+        32
+      ],
+      "source": {
+        "x": 38,
+        "y": 340,
+        "w": 265,
+        "h": 268
+      }
+    },
+    "ferroviaria.home": {
+      "sheet": "identity",
+      "x": 256,
+      "y": 210,
+      "w": 64,
+      "h": 60,
+      "pivot": [
+        32,
+        30
+      ],
+      "source": {
+        "x": 329,
+        "y": 334,
+        "w": 285,
+        "h": 266
+      }
+    },
+    "ferroviaria.away": {
+      "sheet": "identity",
+      "x": 448,
+      "y": 210,
+      "w": 64,
+      "h": 60,
+      "pivot": [
+        32,
+        30
+      ],
+      "source": {
+        "x": 637,
+        "y": 334,
+        "w": 283,
+        "h": 266
+      }
+    },
+    "ferroviaria.flag": {
+      "sheet": "identity",
+      "x": 632,
+      "y": 205,
+      "w": 80,
+      "h": 70,
+      "pivot": [
+        40,
+        35
+      ],
+      "source": {
+        "x": 959,
+        "y": 348,
+        "w": 284,
+        "h": 247
+      }
+    },
+    "horizonte.crest": {
+      "sheet": "identity",
+      "x": 64,
+      "y": 368,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        32
+      ],
+      "source": {
+        "x": 41,
+        "y": 645,
+        "w": 253,
+        "h": 252
+      }
+    },
+    "horizonte.home": {
+      "sheet": "identity",
+      "x": 256,
+      "y": 370,
+      "w": 64,
+      "h": 60,
+      "pivot": [
+        32,
+        30
+      ],
+      "source": {
+        "x": 330,
+        "y": 638,
+        "w": 281,
+        "h": 263
+      }
+    },
+    "horizonte.away": {
+      "sheet": "identity",
+      "x": 448,
+      "y": 370,
+      "w": 64,
+      "h": 60,
+      "pivot": [
+        32,
+        30
+      ],
+      "source": {
+        "x": 639,
+        "y": 639,
+        "w": 281,
+        "h": 262
+      }
+    },
+    "horizonte.flag": {
+      "sheet": "identity",
+      "x": 632,
+      "y": 365,
+      "w": 80,
+      "h": 69,
+      "pivot": [
+        40,
+        34
+      ],
+      "source": {
+        "x": 961,
+        "y": 649,
+        "w": 283,
+        "h": 243
+      }
+    },
+    "ribeirense.crest": {
+      "sheet": "identity",
+      "x": 72,
+      "y": 528,
+      "w": 47,
+      "h": 64,
+      "pivot": [
+        23,
+        32
+      ],
+      "source": {
+        "x": 59,
+        "y": 924,
+        "w": 211,
+        "h": 286
+      }
+    },
+    "ribeirense.home": {
+      "sheet": "identity",
+      "x": 256,
+      "y": 529,
+      "w": 64,
+      "h": 62,
+      "pivot": [
+        32,
+        31
+      ],
+      "source": {
+        "x": 329,
+        "y": 927,
+        "w": 285,
+        "h": 274
+      }
+    },
+    "ribeirense.away": {
+      "sheet": "identity",
+      "x": 448,
+      "y": 529,
+      "w": 64,
+      "h": 62,
+      "pivot": [
+        32,
+        31
+      ],
+      "source": {
+        "x": 637,
+        "y": 927,
+        "w": 282,
+        "h": 274
+      }
+    },
+    "ribeirense.flag": {
+      "sheet": "identity",
+      "x": 632,
+      "y": 524,
+      "w": 79,
+      "h": 72,
+      "pivot": [
+        39,
+        36
+      ],
+      "source": {
+        "x": 961,
+        "y": 938,
+        "w": 282,
+        "h": 258
+      }
+    },
+    "aurora.stadium": {
+      "sheet": "stadiums",
+      "x": 33,
+      "y": 24,
+      "w": 125,
+      "h": 112,
+      "pivot": [
+        62,
+        111
+      ],
+      "source": {
+        "x": 5,
+        "y": 52,
+        "w": 318,
+        "h": 285
+      }
+    },
+    "ferroviaria.stadium": {
+      "sheet": "stadiums",
+      "x": 224,
+      "y": 24,
+      "w": 128,
+      "h": 112,
+      "pivot": [
+        64,
+        111
+      ],
+      "source": {
+        "x": 333,
+        "y": 68,
+        "w": 304,
+        "h": 265
+      }
+    },
+    "horizonte.stadium": {
+      "sheet": "stadiums",
+      "x": 420,
+      "y": 24,
+      "w": 119,
+      "h": 112,
+      "pivot": [
+        59,
+        111
+      ],
+      "source": {
+        "x": 646,
+        "y": 71,
+        "w": 288,
+        "h": 270
+      }
+    },
+    "ribeirense.stadium": {
+      "sheet": "stadiums",
+      "x": 609,
+      "y": 24,
+      "w": 126,
+      "h": 112,
+      "pivot": [
+        63,
+        111
+      ],
+      "source": {
+        "x": 942,
+        "y": 68,
+        "w": 306,
+        "h": 273
+      }
+    },
+    "stadium.terrace_left": {
+      "sheet": "stadiums",
+      "x": 40,
+      "y": 191,
+      "w": 112,
+      "h": 98,
+      "pivot": [
+        56,
+        97
+      ],
+      "source": {
+        "x": 15,
+        "y": 398,
+        "w": 279,
+        "h": 245
+      }
+    },
+    "stadium.terrace_right": {
+      "sheet": "stadiums",
+      "x": 232,
+      "y": 191,
+      "w": 112,
+      "h": 98,
+      "pivot": [
+        56,
+        97
+      ],
+      "source": {
+        "x": 338,
+        "y": 399,
+        "w": 280,
+        "h": 244
+      }
+    },
+    "stadium.covered_left": {
+      "sheet": "stadiums",
+      "x": 424,
+      "y": 187,
+      "w": 112,
+      "h": 105,
+      "pivot": [
+        56,
+        104
+      ],
+      "source": {
+        "x": 647,
+        "y": 380,
+        "w": 270,
+        "h": 252
+      }
+    },
+    "stadium.covered_right": {
+      "sheet": "stadiums",
+      "x": 616,
+      "y": 188,
+      "w": 112,
+      "h": 103,
+      "pivot": [
+        56,
+        102
+      ],
+      "source": {
+        "x": 963,
+        "y": 390,
+        "w": 271,
+        "h": 249
+      }
+    },
+    "stadium.goal": {
+      "sheet": "stadiums",
+      "x": 40,
+      "y": 353,
+      "w": 112,
+      "h": 94,
+      "pivot": [
+        56,
+        93
+      ],
+      "source": {
+        "x": 45,
+        "y": 715,
+        "w": 257,
+        "h": 215
+      }
+    },
+    "stadium.scoreboard": {
+      "sheet": "stadiums",
+      "x": 243,
+      "y": 344,
+      "w": 89,
+      "h": 112,
+      "pivot": [
+        44,
+        111
+      ],
+      "source": {
+        "x": 388,
+        "y": 695,
+        "w": 197,
+        "h": 249
+      }
+    },
+    "stadium.tunnel": {
+      "sheet": "stadiums",
+      "x": 424,
+      "y": 355,
+      "w": 112,
+      "h": 89,
+      "pivot": [
+        56,
+        88
+      ],
+      "source": {
+        "x": 663,
+        "y": 719,
+        "w": 263,
+        "h": 210
+      }
+    },
+    "stadium.floodlight": {
+      "sheet": "stadiums",
+      "x": 656,
+      "y": 344,
+      "w": 32,
+      "h": 112,
+      "pivot": [
+        16,
+        111
+      ],
+      "source": {
+        "x": 1066,
+        "y": 649,
+        "w": 86,
+        "h": 301
+      }
+    },
+    "stadium.gate": {
+      "sheet": "stadiums",
+      "x": 40,
+      "y": 522,
+      "w": 112,
+      "h": 76,
+      "pivot": [
+        56,
+        75
+      ],
+      "source": {
+        "x": 25,
+        "y": 977,
+        "w": 369,
+        "h": 251
+      }
+    },
+    "stadium.turnstile": {
+      "sheet": "stadiums",
+      "x": 247,
+      "y": 504,
+      "w": 81,
+      "h": 112,
+      "pivot": [
+        40,
+        111
+      ],
+      "source": {
+        "x": 430,
+        "y": 984,
+        "w": 162,
+        "h": 224
+      }
+    },
+    "stadium.tickets": {
+      "sheet": "stadiums",
+      "x": 424,
+      "y": 509,
+      "w": 112,
+      "h": 101,
+      "pivot": [
+        56,
+        100
+      ],
+      "source": {
+        "x": 670,
+        "y": 993,
+        "w": 241,
+        "h": 217
+      }
+    },
+    "stadium.fence": {
+      "sheet": "stadiums",
+      "x": 616,
+      "y": 513,
+      "w": 112,
+      "h": 94,
+      "pivot": [
+        56,
+        93
+      ],
+      "source": {
+        "x": 965,
+        "y": 998,
+        "w": 257,
+        "h": 216
+      }
+    },
+    "aurora.headquarters": {
+      "sheet": "facilities",
+      "x": 32,
+      "y": 24,
+      "w": 128,
+      "h": 111,
+      "pivot": [
+        64,
+        110
+      ],
+      "source": {
+        "x": 18,
+        "y": 74,
+        "w": 298,
+        "h": 259
+      }
+    },
+    "ferroviaria.headquarters": {
+      "sheet": "facilities",
+      "x": 232,
+      "y": 24,
+      "w": 112,
+      "h": 112,
+      "pivot": [
+        56,
+        111
+      ],
+      "source": {
+        "x": 325,
+        "y": 37,
+        "w": 299,
+        "h": 298
+      }
+    },
+    "horizonte.headquarters": {
+      "sheet": "facilities",
+      "x": 416,
+      "y": 28,
+      "w": 128,
+      "h": 104,
+      "pivot": [
+        64,
+        103
+      ],
+      "source": {
+        "x": 630,
+        "y": 89,
+        "w": 308,
+        "h": 250
+      }
+    },
+    "ribeirense.headquarters": {
+      "sheet": "facilities",
+      "x": 608,
+      "y": 24,
+      "w": 128,
+      "h": 111,
+      "pivot": [
+        64,
+        110
+      ],
+      "source": {
+        "x": 947,
+        "y": 86,
+        "w": 291,
+        "h": 253
+      }
+    },
+    "club.reception": {
+      "sheet": "facilities",
+      "x": 33,
+      "y": 184,
+      "w": 125,
+      "h": 112,
+      "pivot": [
+        62,
+        111
+      ],
+      "source": {
+        "x": 10,
+        "y": 345,
+        "w": 308,
+        "h": 277
+      }
+    },
+    "club.gym": {
+      "sheet": "facilities",
+      "x": 227,
+      "y": 184,
+      "w": 122,
+      "h": 112,
+      "pivot": [
+        61,
+        111
+      ],
+      "source": {
+        "x": 331,
+        "y": 348,
+        "w": 305,
+        "h": 280
+      }
+    },
+    "club.physio": {
+      "sheet": "facilities",
+      "x": 420,
+      "y": 184,
+      "w": 120,
+      "h": 112,
+      "pivot": [
+        60,
+        111
+      ],
+      "source": {
+        "x": 639,
+        "y": 348,
+        "w": 300,
+        "h": 279
+      }
+    },
+    "club.locker_room": {
+      "sheet": "facilities",
+      "x": 613,
+      "y": 184,
+      "w": 118,
+      "h": 112,
+      "pivot": [
+        59,
+        111
+      ],
+      "source": {
+        "x": 946,
+        "y": 349,
+        "w": 299,
+        "h": 283
+      }
+    },
+    "club.tactics": {
+      "sheet": "facilities",
+      "x": 46,
+      "y": 344,
+      "w": 99,
+      "h": 112,
+      "pivot": [
+        49,
+        111
+      ],
+      "source": {
+        "x": 43,
+        "y": 639,
+        "w": 238,
+        "h": 270
+      }
+    },
+    "club.dugout": {
+      "sheet": "facilities",
+      "x": 232,
+      "y": 355,
+      "w": 112,
+      "h": 90,
+      "pivot": [
+        56,
+        89
+      ],
+      "source": {
+        "x": 320,
+        "y": 652,
+        "w": 345,
+        "h": 277
+      }
+    },
+    "club.lockers": {
+      "sheet": "facilities",
+      "x": 437,
+      "y": 344,
+      "w": 85,
+      "h": 112,
+      "pivot": [
+        42,
+        111
+      ],
+      "source": {
+        "x": 701,
+        "y": 641,
+        "w": 200,
+        "h": 262
+      }
+    },
+    "club.boots": {
+      "sheet": "facilities",
+      "x": 619,
+      "y": 344,
+      "w": 105,
+      "h": 112,
+      "pivot": [
+        52,
+        111
+      ],
+      "source": {
+        "x": 986,
+        "y": 677,
+        "w": 218,
+        "h": 232
+      }
+    },
+    "club.bus": {
+      "sheet": "facilities",
+      "x": 40,
+      "y": 519,
+      "w": 112,
+      "h": 82,
+      "pivot": [
+        56,
+        81
+      ],
+      "source": {
+        "x": 20,
+        "y": 949,
+        "w": 334,
+        "h": 246
+      }
+    },
+    "club.merchandise": {
+      "sheet": "facilities",
+      "x": 232,
+      "y": 509,
+      "w": 112,
+      "h": 102,
+      "pivot": [
+        56,
+        101
+      ],
+      "source": {
+        "x": 370,
+        "y": 935,
+        "w": 310,
+        "h": 283
+      }
+    },
+    "club.flagpole": {
+      "sheet": "facilities",
+      "x": 439,
+      "y": 504,
+      "w": 81,
+      "h": 112,
+      "pivot": [
+        40,
+        111
+      ],
+      "source": {
+        "x": 702,
+        "y": 920,
+        "w": 213,
+        "h": 294
+      }
+    },
+    "club.trophies": {
+      "sheet": "facilities",
+      "x": 616,
+      "y": 508,
+      "w": 112,
+      "h": 103,
+      "pivot": [
+        56,
+        102
+      ],
+      "source": {
+        "x": 947,
+        "y": 961,
+        "w": 282,
+        "h": 260
+      }
+    },
+    "aurora.supporters_standing": {
+      "sheet": "crowd",
+      "x": 52,
+      "y": 36,
+      "w": 88,
+      "h": 87,
+      "pivot": [
+        44,
+        86
+      ],
+      "source": {
+        "x": 61,
+        "y": 104,
+        "w": 212,
+        "h": 210
+      }
+    },
+    "aurora.supporters_seated": {
+      "sheet": "crowd",
+      "x": 244,
+      "y": 45,
+      "w": 88,
+      "h": 70,
+      "pivot": [
+        44,
+        69
+      ],
+      "source": {
+        "x": 361,
+        "y": 117,
+        "w": 254,
+        "h": 202
+      }
+    },
+    "aurora.supporters_drums": {
+      "sheet": "crowd",
+      "x": 436,
+      "y": 38,
+      "w": 88,
+      "h": 83,
+      "pivot": [
+        44,
+        82
+      ],
+      "source": {
+        "x": 672,
+        "y": 111,
+        "w": 216,
+        "h": 204
+      }
+    },
+    "aurora.supporters_flags": {
+      "sheet": "crowd",
+      "x": 633,
+      "y": 36,
+      "w": 78,
+      "h": 88,
+      "pivot": [
+        39,
+        87
+      ],
+      "source": {
+        "x": 959,
+        "y": 45,
+        "w": 248,
+        "h": 279
+      }
+    },
+    "ferroviaria.supporters_standing": {
+      "sheet": "crowd",
+      "x": 52,
+      "y": 196,
+      "w": 88,
+      "h": 87,
+      "pivot": [
+        44,
+        86
+      ],
+      "source": {
+        "x": 60,
+        "y": 398,
+        "w": 215,
+        "h": 213
+      }
+    },
+    "ferroviaria.supporters_seated": {
+      "sheet": "crowd",
+      "x": 244,
+      "y": 205,
+      "w": 88,
+      "h": 69,
+      "pivot": [
+        44,
+        68
+      ],
+      "source": {
+        "x": 355,
+        "y": 409,
+        "w": 262,
+        "h": 205
+      }
+    },
+    "ferroviaria.supporters_drums": {
+      "sheet": "crowd",
+      "x": 436,
+      "y": 198,
+      "w": 88,
+      "h": 83,
+      "pivot": [
+        44,
+        82
+      ],
+      "source": {
+        "x": 669,
+        "y": 403,
+        "w": 223,
+        "h": 210
+      }
+    },
+    "ferroviaria.supporters_flags": {
+      "sheet": "crowd",
+      "x": 633,
+      "y": 196,
+      "w": 78,
+      "h": 88,
+      "pivot": [
+        39,
+        87
+      ],
+      "source": {
+        "x": 960,
+        "y": 339,
+        "w": 256,
+        "h": 287
+      }
+    },
+    "horizonte.supporters_standing": {
+      "sheet": "crowd",
+      "x": 52,
+      "y": 356,
+      "w": 87,
+      "h": 88,
+      "pivot": [
+        43,
+        87
+      ],
+      "source": {
+        "x": 59,
+        "y": 686,
+        "w": 222,
+        "h": 224
+      }
+    },
+    "horizonte.supporters_seated": {
+      "sheet": "crowd",
+      "x": 244,
+      "y": 364,
+      "w": 88,
+      "h": 71,
+      "pivot": [
+        44,
+        70
+      ],
+      "source": {
+        "x": 357,
+        "y": 710,
+        "w": 262,
+        "h": 210
+      }
+    },
+    "horizonte.supporters_drums": {
+      "sheet": "crowd",
+      "x": 436,
+      "y": 358,
+      "w": 88,
+      "h": 83,
+      "pivot": [
+        44,
+        82
+      ],
+      "source": {
+        "x": 670,
+        "y": 699,
+        "w": 226,
+        "h": 212
+      }
+    },
+    "horizonte.supporters_flags": {
+      "sheet": "crowd",
+      "x": 633,
+      "y": 356,
+      "w": 77,
+      "h": 88,
+      "pivot": [
+        38,
+        87
+      ],
+      "source": {
+        "x": 961,
+        "y": 639,
+        "w": 256,
+        "h": 294
+      }
+    },
+    "ribeirense.supporters_standing": {
+      "sheet": "crowd",
+      "x": 52,
+      "y": 516,
+      "w": 87,
+      "h": 88,
+      "pivot": [
+        43,
+        87
+      ],
+      "source": {
+        "x": 60,
+        "y": 981,
+        "w": 219,
+        "h": 221
+      }
+    },
+    "ribeirense.supporters_seated": {
+      "sheet": "crowd",
+      "x": 244,
+      "y": 526,
+      "w": 88,
+      "h": 68,
+      "pivot": [
+        44,
+        67
+      ],
+      "source": {
+        "x": 355,
+        "y": 996,
+        "w": 267,
+        "h": 205
+      }
+    },
+    "ribeirense.supporters_drums": {
+      "sheet": "crowd",
+      "x": 436,
+      "y": 520,
+      "w": 88,
+      "h": 79,
+      "pivot": [
+        44,
+        78
+      ],
+      "source": {
+        "x": 670,
+        "y": 989,
+        "w": 233,
+        "h": 208
+      }
+    },
+    "ribeirense.supporters_flags": {
+      "sheet": "crowd",
+      "x": 630,
+      "y": 516,
+      "w": 83,
+      "h": 88,
+      "pivot": [
+        41,
+        87
+      ],
+      "source": {
+        "x": 962,
+        "y": 939,
+        "w": 259,
+        "h": 275
+      }
+    },
+    "varzea.grass": {
+      "sheet": "varzea",
+      "x": 64,
+      "y": 64,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ],
+      "source": {
+        "x": 17,
+        "y": 78,
+        "w": 291,
+        "h": 165
+      }
+    },
+    "varzea.dirt": {
+      "sheet": "varzea",
+      "x": 256,
+      "y": 64,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ],
+      "source": {
+        "x": 326,
+        "y": 78,
+        "w": 292,
+        "h": 165
+      }
+    },
+    "varzea.gravel": {
+      "sheet": "varzea",
+      "x": 448,
+      "y": 64,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ],
+      "source": {
+        "x": 637,
+        "y": 78,
+        "w": 292,
+        "h": 165
+      }
+    },
+    "varzea.chalk": {
+      "sheet": "varzea",
+      "x": 640,
+      "y": 64,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ],
+      "source": {
+        "x": 945,
+        "y": 78,
+        "w": 292,
+        "h": 165
+      }
+    },
+    "varzea.pitch": {
+      "sheet": "varzea",
+      "x": 24,
+      "y": 190,
+      "w": 144,
+      "h": 100,
+      "pivot": [
+        72,
+        99
+      ],
+      "source": {
+        "x": 16,
+        "y": 321,
+        "w": 379,
+        "h": 264
+      }
+    },
+    "varzea.fence": {
+      "sheet": "varzea",
+      "x": 238,
+      "y": 184,
+      "w": 99,
+      "h": 112,
+      "pivot": [
+        49,
+        111
+      ],
+      "source": {
+        "x": 421,
+        "y": 355,
+        "w": 186,
+        "h": 211
+      }
+    },
+    "varzea.goal": {
+      "sheet": "varzea",
+      "x": 424,
+      "y": 192,
+      "w": 112,
+      "h": 95,
+      "pivot": [
+        56,
+        94
+      ],
+      "source": {
+        "x": 640,
+        "y": 347,
+        "w": 274,
+        "h": 232
+      }
+    },
+    "varzea.wooden_goal": {
+      "sheet": "varzea",
+      "x": 616,
+      "y": 187,
+      "w": 112,
+      "h": 106,
+      "pivot": [
+        56,
+        105
+      ],
+      "source": {
+        "x": 966,
+        "y": 329,
+        "w": 256,
+        "h": 242
+      }
+    },
+    "varzea.bench": {
+      "sheet": "varzea",
+      "x": 40,
+      "y": 364,
+      "w": 112,
+      "h": 72,
+      "pivot": [
+        56,
+        71
+      ],
+      "source": {
+        "x": 30,
+        "y": 680,
+        "w": 286,
+        "h": 185
+      }
+    },
+    "varzea.tires": {
+      "sheet": "varzea",
+      "x": 232,
+      "y": 373,
+      "w": 112,
+      "h": 53,
+      "pivot": [
+        56,
+        52
+      ],
+      "source": {
+        "x": 364,
+        "y": 717,
+        "w": 274,
+        "h": 129
+      }
+    },
+    "varzea.bin": {
+      "sheet": "varzea",
+      "x": 441,
+      "y": 344,
+      "w": 78,
+      "h": 112,
+      "pivot": [
+        39,
+        111
+      ],
+      "source": {
+        "x": 730,
+        "y": 655,
+        "w": 159,
+        "h": 228
+      }
+    },
+    "varzea.water": {
+      "sheet": "varzea",
+      "x": 632,
+      "y": 344,
+      "w": 80,
+      "h": 112,
+      "pivot": [
+        40,
+        111
+      ],
+      "source": {
+        "x": 1024,
+        "y": 649,
+        "w": 172,
+        "h": 241
+      }
+    },
+    "varzea.snack_cart": {
+      "sheet": "varzea",
+      "x": 46,
+      "y": 504,
+      "w": 99,
+      "h": 112,
+      "pivot": [
+        49,
+        111
+      ],
+      "source": {
+        "x": 47,
+        "y": 920,
+        "w": 250,
+        "h": 284
+      }
+    },
+    "varzea.scoreboard": {
+      "sheet": "varzea",
+      "x": 244,
+      "y": 504,
+      "w": 87,
+      "h": 112,
+      "pivot": [
+        43,
+        111
+      ],
+      "source": {
+        "x": 366,
+        "y": 942,
+        "w": 194,
+        "h": 251
+      }
+    },
+    "varzea.changing_room": {
+      "sheet": "varzea",
+      "x": 416,
+      "y": 507,
+      "w": 128,
+      "h": 105,
+      "pivot": [
+        64,
+        104
+      ],
+      "source": {
+        "x": 616,
+        "y": 938,
+        "w": 318,
+        "h": 262
+      }
+    },
+    "varzea.balls": {
+      "sheet": "varzea",
+      "x": 616,
+      "y": 515,
+      "w": 112,
+      "h": 90,
+      "pivot": [
+        56,
+        89
+      ],
+      "source": {
+        "x": 967,
+        "y": 987,
+        "w": 244,
+        "h": 196
+      }
+    },
+    "mare_coral.crest": {
+      "sheet": "identity-coast",
+      "x": 66,
+      "y": 48,
+      "w": 59,
+      "h": 64,
+      "pivot": [
+        29,
+        32
+      ],
+      "source": {
+        "x": 164,
+        "y": 17,
+        "w": 220,
+        "h": 238
+      }
+    },
+    "mare_coral.home": {
+      "sheet": "identity-coast",
+      "x": 256,
+      "y": 52,
+      "w": 64,
+      "h": 55,
+      "pivot": [
+        32,
+        27
+      ],
+      "source": {
+        "x": 470,
+        "y": 23,
+        "w": 262,
+        "h": 227
+      }
+    },
+    "mare_coral.away": {
+      "sheet": "identity-coast",
+      "x": 448,
+      "y": 52,
+      "w": 64,
+      "h": 55,
+      "pivot": [
+        32,
+        27
+      ],
+      "source": {
+        "x": 790,
+        "y": 23,
+        "w": 263,
+        "h": 227
+      }
+    },
+    "mare_coral.flag": {
+      "sheet": "identity-coast",
+      "x": 632,
+      "y": 46,
+      "w": 80,
+      "h": 68,
+      "pivot": [
+        40,
+        34
+      ],
+      "source": {
+        "x": 1134,
+        "y": 23,
+        "w": 268,
+        "h": 227
+      }
+    },
+    "serra_cobre.crest": {
+      "sheet": "identity-coast",
+      "x": 66,
+      "y": 208,
+      "w": 59,
+      "h": 64,
+      "pivot": [
+        29,
+        32
+      ],
+      "source": {
+        "x": 163,
+        "y": 261,
+        "w": 222,
+        "h": 242
+      }
+    },
+    "serra_cobre.home": {
+      "sheet": "identity-coast",
+      "x": 256,
+      "y": 212,
+      "w": 64,
+      "h": 55,
+      "pivot": [
+        32,
+        27
+      ],
+      "source": {
+        "x": 471,
+        "y": 271,
+        "w": 262,
+        "h": 227
+      }
+    },
+    "serra_cobre.away": {
+      "sheet": "identity-coast",
+      "x": 448,
+      "y": 212,
+      "w": 64,
+      "h": 55,
+      "pivot": [
+        32,
+        27
+      ],
+      "source": {
+        "x": 791,
+        "y": 271,
+        "w": 263,
+        "h": 227
+      }
+    },
+    "serra_cobre.flag": {
+      "sheet": "identity-coast",
+      "x": 632,
+      "y": 206,
+      "w": 80,
+      "h": 67,
+      "pivot": [
+        40,
+        33
+      ],
+      "source": {
+        "x": 1134,
+        "y": 269,
+        "w": 273,
+        "h": 229
+      }
+    },
+    "sol_pedra.crest": {
+      "sheet": "identity-coast",
+      "x": 64,
+      "y": 368,
+      "w": 64,
+      "h": 63,
+      "pivot": [
+        32,
+        31
+      ],
+      "source": {
+        "x": 153,
+        "y": 515,
+        "w": 239,
+        "h": 234
+      }
+    },
+    "sol_pedra.home": {
+      "sheet": "identity-coast",
+      "x": 256,
+      "y": 372,
+      "w": 64,
+      "h": 55,
+      "pivot": [
+        32,
+        27
+      ],
+      "source": {
+        "x": 468,
+        "y": 516,
+        "w": 265,
+        "h": 229
+      }
+    },
+    "sol_pedra.away": {
+      "sheet": "identity-coast",
+      "x": 448,
+      "y": 372,
+      "w": 64,
+      "h": 55,
+      "pivot": [
+        32,
+        27
+      ],
+      "source": {
+        "x": 789,
+        "y": 516,
+        "w": 265,
+        "h": 229
+      }
+    },
+    "sol_pedra.flag": {
+      "sheet": "identity-coast",
+      "x": 632,
+      "y": 367,
+      "w": 80,
+      "h": 65,
+      "pivot": [
+        40,
+        32
+      ],
+      "source": {
+        "x": 1134,
+        "y": 513,
+        "w": 286,
+        "h": 232
+      }
+    },
+    "flor_cerrado.crest": {
+      "sheet": "identity-coast",
+      "x": 64,
+      "y": 531,
+      "w": 64,
+      "h": 57,
+      "pivot": [
+        32,
+        28
+      ],
+      "source": {
+        "x": 132,
+        "y": 758,
+        "w": 281,
+        "h": 249
+      }
+    },
+    "flor_cerrado.home": {
+      "sheet": "identity-coast",
+      "x": 256,
+      "y": 532,
+      "w": 64,
+      "h": 56,
+      "pivot": [
+        32,
+        28
+      ],
+      "source": {
+        "x": 467,
+        "y": 761,
+        "w": 266,
+        "h": 231
+      }
+    },
+    "flor_cerrado.away": {
+      "sheet": "identity-coast",
+      "x": 448,
+      "y": 532,
+      "w": 64,
+      "h": 56,
+      "pivot": [
+        32,
+        28
+      ],
+      "source": {
+        "x": 789,
+        "y": 762,
+        "w": 265,
+        "h": 230
+      }
+    },
+    "flor_cerrado.flag": {
+      "sheet": "identity-coast",
+      "x": 632,
+      "y": 527,
+      "w": 80,
+      "h": 66,
+      "pivot": [
+        40,
+        33
+      ],
+      "source": {
+        "x": 1134,
+        "y": 762,
+        "w": 286,
+        "h": 236
+      }
+    },
+    "raiz_barro.crest": {
+      "sheet": "identity-city",
+      "x": 67,
+      "y": 48,
+      "w": 57,
+      "h": 64,
+      "pivot": [
+        28,
+        32
+      ],
+      "source": {
+        "x": 97,
+        "y": 13,
+        "w": 231,
+        "h": 261
+      }
+    },
+    "raiz_barro.home": {
+      "sheet": "identity-city",
+      "x": 256,
+      "y": 51,
+      "w": 64,
+      "h": 58,
+      "pivot": [
+        32,
+        29
+      ],
+      "source": {
+        "x": 403,
+        "y": 26,
+        "w": 265,
+        "h": 241
+      }
+    },
+    "raiz_barro.away": {
+      "sheet": "identity-city",
+      "x": 448,
+      "y": 51,
+      "w": 64,
+      "h": 58,
+      "pivot": [
+        32,
+        29
+      ],
+      "source": {
+        "x": 728,
+        "y": 27,
+        "w": 265,
+        "h": 240
+      }
+    },
+    "raiz_barro.flag": {
+      "sheet": "identity-city",
+      "x": 632,
+      "y": 47,
+      "w": 80,
+      "h": 66,
+      "pivot": [
+        40,
+        33
+      ],
+      "source": {
+        "x": 1049,
+        "y": 20,
+        "w": 294,
+        "h": 242
+      }
+    },
+    "farol_enseada.crest": {
+      "sheet": "identity-city",
+      "x": 69,
+      "y": 208,
+      "w": 54,
+      "h": 64,
+      "pivot": [
+        27,
+        32
+      ],
+      "source": {
+        "x": 98,
+        "y": 284,
+        "w": 228,
+        "h": 268
+      }
+    },
+    "farol_enseada.home": {
+      "sheet": "identity-city",
+      "x": 256,
+      "y": 211,
+      "w": 64,
+      "h": 58,
+      "pivot": [
+        32,
+        29
+      ],
+      "source": {
+        "x": 403,
+        "y": 294,
+        "w": 265,
+        "h": 241
+      }
+    },
+    "farol_enseada.away": {
+      "sheet": "identity-city",
+      "x": 448,
+      "y": 211,
+      "w": 64,
+      "h": 58,
+      "pivot": [
+        32,
+        29
+      ],
+      "source": {
+        "x": 728,
+        "y": 294,
+        "w": 265,
+        "h": 241
+      }
+    },
+    "farol_enseada.flag": {
+      "sheet": "identity-city",
+      "x": 632,
+      "y": 207,
+      "w": 80,
+      "h": 66,
+      "pivot": [
+        40,
+        33
+      ],
+      "source": {
+        "x": 1051,
+        "y": 289,
+        "w": 295,
+        "h": 245
+      }
+    },
+    "bussola_vale.crest": {
+      "sheet": "identity-city",
+      "x": 64,
+      "y": 368,
+      "w": 64,
+      "h": 63,
+      "pivot": [
+        32,
+        31
+      ],
+      "source": {
+        "x": 90,
+        "y": 570,
+        "w": 243,
+        "h": 241
+      }
+    },
+    "bussola_vale.home": {
+      "sheet": "identity-city",
+      "x": 256,
+      "y": 371,
+      "w": 64,
+      "h": 58,
+      "pivot": [
+        32,
+        29
+      ],
+      "source": {
+        "x": 404,
+        "y": 563,
+        "w": 265,
+        "h": 242
+      }
+    },
+    "bussola_vale.away": {
+      "sheet": "identity-city",
+      "x": 448,
+      "y": 371,
+      "w": 64,
+      "h": 58,
+      "pivot": [
+        32,
+        29
+      ],
+      "source": {
+        "x": 728,
+        "y": 563,
+        "w": 266,
+        "h": 243
+      }
+    },
+    "bussola_vale.flag": {
+      "sheet": "identity-city",
+      "x": 632,
+      "y": 367,
+      "w": 80,
+      "h": 66,
+      "pivot": [
+        40,
+        33
+      ],
+      "source": {
+        "x": 1050,
+        "y": 556,
+        "w": 298,
+        "h": 247
+      }
+    },
+    "vila_neon.crest": {
+      "sheet": "identity-city",
+      "x": 67,
+      "y": 528,
+      "w": 57,
+      "h": 64,
+      "pivot": [
+        28,
+        32
+      ],
+      "source": {
+        "x": 98,
+        "y": 835,
+        "w": 231,
+        "h": 260
+      }
+    },
+    "vila_neon.home": {
+      "sheet": "identity-city",
+      "x": 256,
+      "y": 530,
+      "w": 64,
+      "h": 59,
+      "pivot": [
+        32,
+        29
+      ],
+      "source": {
+        "x": 403,
+        "y": 830,
+        "w": 265,
+        "h": 244
+      }
+    },
+    "vila_neon.away": {
+      "sheet": "identity-city",
+      "x": 448,
+      "y": 530,
+      "w": 64,
+      "h": 59,
+      "pivot": [
+        32,
+        29
+      ],
+      "source": {
+        "x": 728,
+        "y": 831,
+        "w": 265,
+        "h": 243
+      }
+    },
+    "vila_neon.flag": {
+      "sheet": "identity-city",
+      "x": 632,
+      "y": 526,
+      "w": 80,
+      "h": 67,
+      "pivot": [
+        40,
+        33
+      ],
+      "source": {
+        "x": 1050,
+        "y": 830,
+        "w": 295,
+        "h": 248
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "brand": "TOUCHLINE",
+  "subtitle": "RAÍZES DO FUTEBOL",
+  "location": "VILA DAS PALMEIRAS  /  SANTA AURORA",
+  "chapter": "01  /  UM NOVO COMEÇO",
+  "home": "Seu apartamento",
+  "time": "2027  ·  MANHÃ",
+  "objective": "Uma cidade nova. Uma história por descobrir.",
+  "hint": "WASD / SETAS  mover     E  examinar     ESC  pausa",
+  "prototype": "PROTÓTIPO M0 + M1  ·  ARTE PROVISÓRIA",
+  "box_prompt": "E  ·  Examinar a caixa de Antônio",
+  "box_title": "A CAIXA DE ANTÔNIO",
+  "box_body": "Uma foto de 1998, um caderno de observações da base e um ingresso antigo.\n\nEntre as páginas, uma carta do seu tio: “O futebol começa muito antes do apito. Cuide de quem ainda está começando.”\n\nTalvez Santa Aurora seja um bom lugar para recomeçar.",
+  "close": "E / ESC  voltar",
+  "paused": "PAUSA",
+  "pause_body": "Respire. Santa Aurora pode esperar.\n\nESC para continuar.",
+  "inspect_hint": "Aproxime-se da caixa âmbar junto à mesa."
+}

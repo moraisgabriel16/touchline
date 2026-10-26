@@ -1,0 +1,1701 @@
+{
+  "version": 2,
+  "filter": "nearest",
+  "frameSize": [
+    64,
+    64
+  ],
+  "pivot": [
+    32,
+    58
+  ],
+  "standingHeight": 40,
+  "sheets": {
+    "hero": {
+      "file": "hero-v2.png",
+      "width": 256,
+      "height": 256
+    },
+    "helena": {
+      "file": "helena-v2.png",
+      "width": 256,
+      "height": 256
+    },
+    "davi": {
+      "file": "davi-v2.png",
+      "width": 256,
+      "height": 256
+    },
+    "keeper": {
+      "file": "keeper-v2.png",
+      "width": 256,
+      "height": 256
+    }
+  },
+  "frames": {
+    "hero.se.idle": {
+      "sheet": "hero",
+      "x": 0,
+      "y": 0,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 23,
+        "y": 18,
+        "w": 17,
+        "h": 40
+      },
+      "scale": 0.140597539543058,
+      "source": {
+        "x": 83,
+        "y": 70,
+        "w": 120,
+        "h": 288
+      },
+      "sourceSlot": 0,
+      "mirror": false
+    },
+    "hero.se.walk_a": {
+      "sheet": "hero",
+      "x": 64,
+      "y": 0,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 21,
+        "y": 17,
+        "w": 22,
+        "h": 41
+      },
+      "scale": 0.140597539543058,
+      "source": {
+        "x": 341,
+        "y": 69,
+        "w": 159,
+        "h": 290
+      },
+      "sourceSlot": 1,
+      "mirror": false
+    },
+    "hero.se.walk_b": {
+      "sheet": "hero",
+      "x": 128,
+      "y": 0,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 22,
+        "y": 18,
+        "w": 22,
+        "h": 40
+      },
+      "scale": 0.140597539543058,
+      "source": {
+        "x": 328,
+        "y": 416,
+        "w": 158,
+        "h": 287
+      },
+      "sourceSlot": 5,
+      "mirror": true
+    },
+    "hero.se.action": {
+      "sheet": "hero",
+      "x": 192,
+      "y": 0,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 23,
+        "y": 18,
+        "w": 23,
+        "h": 40
+      },
+      "scale": 0.140597539543058,
+      "source": {
+        "x": 891,
+        "y": 70,
+        "w": 162,
+        "h": 288
+      },
+      "sourceSlot": 3,
+      "mirror": false
+    },
+    "hero.sw.idle": {
+      "sheet": "hero",
+      "x": 0,
+      "y": 64,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 23,
+        "y": 17,
+        "w": 17,
+        "h": 41
+      },
+      "scale": 0.140597539543058,
+      "source": {
+        "x": 82,
+        "y": 416,
+        "w": 124,
+        "h": 290
+      },
+      "sourceSlot": 4,
+      "mirror": false
+    },
+    "hero.sw.walk_a": {
+      "sheet": "hero",
+      "x": 64,
+      "y": 64,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 20,
+        "y": 18,
+        "w": 22,
+        "h": 40
+      },
+      "scale": 0.140597539543058,
+      "source": {
+        "x": 328,
+        "y": 416,
+        "w": 158,
+        "h": 287
+      },
+      "sourceSlot": 5,
+      "mirror": false
+    },
+    "hero.sw.walk_b": {
+      "sheet": "hero",
+      "x": 128,
+      "y": 64,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 21,
+        "y": 17,
+        "w": 22,
+        "h": 41
+      },
+      "scale": 0.140597539543058,
+      "source": {
+        "x": 341,
+        "y": 69,
+        "w": 159,
+        "h": 290
+      },
+      "sourceSlot": 1,
+      "mirror": true
+    },
+    "hero.sw.action": {
+      "sheet": "hero",
+      "x": 192,
+      "y": 64,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 19,
+        "y": 17,
+        "w": 22,
+        "h": 41
+      },
+      "scale": 0.140597539543058,
+      "source": {
+        "x": 861,
+        "y": 416,
+        "w": 156,
+        "h": 290
+      },
+      "sourceSlot": 7,
+      "mirror": false
+    },
+    "hero.ne.idle": {
+      "sheet": "hero",
+      "x": 0,
+      "y": 128,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 23,
+        "y": 18,
+        "w": 16,
+        "h": 40
+      },
+      "scale": 0.140597539543058,
+      "source": {
+        "x": 87,
+        "y": 768,
+        "w": 117,
+        "h": 281
+      },
+      "sourceSlot": 8,
+      "mirror": false
+    },
+    "hero.ne.walk_a": {
+      "sheet": "hero",
+      "x": 64,
+      "y": 128,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 21,
+        "y": 18,
+        "w": 22,
+        "h": 40
+      },
+      "scale": 0.140597539543058,
+      "source": {
+        "x": 338,
+        "y": 769,
+        "w": 160,
+        "h": 282
+      },
+      "sourceSlot": 9,
+      "mirror": false
+    },
+    "hero.ne.walk_b": {
+      "sheet": "hero",
+      "x": 128,
+      "y": 128,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 22,
+        "y": 17,
+        "w": 23,
+        "h": 41
+      },
+      "scale": 0.140597539543058,
+      "source": {
+        "x": 322,
+        "y": 1110,
+        "w": 164,
+        "h": 289
+      },
+      "sourceSlot": 13,
+      "mirror": true
+    },
+    "hero.ne.action": {
+      "sheet": "hero",
+      "x": 192,
+      "y": 128,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 23,
+        "y": 18,
+        "w": 22,
+        "h": 40
+      },
+      "scale": 0.140597539543058,
+      "source": {
+        "x": 894,
+        "y": 768,
+        "w": 157,
+        "h": 281
+      },
+      "sourceSlot": 11,
+      "mirror": false
+    },
+    "hero.nw.idle": {
+      "sheet": "hero",
+      "x": 0,
+      "y": 192,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 24,
+        "y": 19,
+        "w": 17,
+        "h": 39
+      },
+      "scale": 0.140597539543058,
+      "source": {
+        "x": 83,
+        "y": 1110,
+        "w": 121,
+        "h": 278
+      },
+      "sourceSlot": 12,
+      "mirror": false
+    },
+    "hero.nw.walk_a": {
+      "sheet": "hero",
+      "x": 64,
+      "y": 192,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 20,
+        "y": 17,
+        "w": 23,
+        "h": 41
+      },
+      "scale": 0.140597539543058,
+      "source": {
+        "x": 322,
+        "y": 1110,
+        "w": 164,
+        "h": 289
+      },
+      "sourceSlot": 13,
+      "mirror": false
+    },
+    "hero.nw.walk_b": {
+      "sheet": "hero",
+      "x": 128,
+      "y": 192,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 21,
+        "y": 18,
+        "w": 22,
+        "h": 40
+      },
+      "scale": 0.140597539543058,
+      "source": {
+        "x": 338,
+        "y": 769,
+        "w": 160,
+        "h": 282
+      },
+      "sourceSlot": 9,
+      "mirror": true
+    },
+    "hero.nw.action": {
+      "sheet": "hero",
+      "x": 192,
+      "y": 192,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 20,
+        "y": 18,
+        "w": 21,
+        "h": 40
+      },
+      "scale": 0.140597539543058,
+      "source": {
+        "x": 867,
+        "y": 1109,
+        "w": 151,
+        "h": 282
+      },
+      "sourceSlot": 15,
+      "mirror": false
+    },
+    "helena.se.idle": {
+      "sheet": "helena",
+      "x": 0,
+      "y": 0,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 24,
+        "y": 18,
+        "w": 17,
+        "h": 40
+      },
+      "scale": 0.1384083044982699,
+      "source": {
+        "x": 88,
+        "y": 69,
+        "w": 122,
+        "h": 288
+      },
+      "sourceSlot": 0,
+      "mirror": false
+    },
+    "helena.se.walk_a": {
+      "sheet": "helena",
+      "x": 64,
+      "y": 0,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 22,
+        "y": 18,
+        "w": 22,
+        "h": 40
+      },
+      "scale": 0.1384083044982699,
+      "source": {
+        "x": 348,
+        "y": 69,
+        "w": 156,
+        "h": 291
+      },
+      "sourceSlot": 1,
+      "mirror": false
+    },
+    "helena.se.walk_b": {
+      "sheet": "helena",
+      "x": 128,
+      "y": 0,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 23,
+        "y": 17,
+        "w": 21,
+        "h": 41
+      },
+      "scale": 0.1384083044982699,
+      "source": {
+        "x": 329,
+        "y": 408,
+        "w": 155,
+        "h": 299
+      },
+      "sourceSlot": 5,
+      "mirror": true
+    },
+    "helena.se.action": {
+      "sheet": "helena",
+      "x": 192,
+      "y": 0,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 24,
+        "y": 17,
+        "w": 22,
+        "h": 41
+      },
+      "scale": 0.1384083044982699,
+      "source": {
+        "x": 890,
+        "y": 66,
+        "w": 162,
+        "h": 294
+      },
+      "sourceSlot": 3,
+      "mirror": false
+    },
+    "helena.sw.idle": {
+      "sheet": "helena",
+      "x": 0,
+      "y": 64,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 22,
+        "y": 16,
+        "w": 18,
+        "h": 42
+      },
+      "scale": 0.1384083044982699,
+      "source": {
+        "x": 80,
+        "y": 407,
+        "w": 130,
+        "h": 300
+      },
+      "sourceSlot": 4,
+      "mirror": false
+    },
+    "helena.sw.walk_a": {
+      "sheet": "helena",
+      "x": 64,
+      "y": 64,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 20,
+        "y": 17,
+        "w": 21,
+        "h": 41
+      },
+      "scale": 0.1384083044982699,
+      "source": {
+        "x": 329,
+        "y": 408,
+        "w": 155,
+        "h": 299
+      },
+      "sourceSlot": 5,
+      "mirror": false
+    },
+    "helena.sw.walk_b": {
+      "sheet": "helena",
+      "x": 128,
+      "y": 64,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 20,
+        "y": 18,
+        "w": 22,
+        "h": 40
+      },
+      "scale": 0.1384083044982699,
+      "source": {
+        "x": 348,
+        "y": 69,
+        "w": 156,
+        "h": 291
+      },
+      "sourceSlot": 1,
+      "mirror": true
+    },
+    "helena.sw.action": {
+      "sheet": "helena",
+      "x": 192,
+      "y": 64,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 18,
+        "y": 17,
+        "w": 22,
+        "h": 41
+      },
+      "scale": 0.1384083044982699,
+      "source": {
+        "x": 860,
+        "y": 409,
+        "w": 161,
+        "h": 298
+      },
+      "sourceSlot": 7,
+      "mirror": false
+    },
+    "helena.ne.idle": {
+      "sheet": "helena",
+      "x": 0,
+      "y": 128,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 24,
+        "y": 19,
+        "w": 17,
+        "h": 39
+      },
+      "scale": 0.1384083044982699,
+      "source": {
+        "x": 82,
+        "y": 757,
+        "w": 121,
+        "h": 285
+      },
+      "sourceSlot": 8,
+      "mirror": false
+    },
+    "helena.ne.walk_a": {
+      "sheet": "helena",
+      "x": 64,
+      "y": 128,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 22,
+        "y": 18,
+        "w": 22,
+        "h": 40
+      },
+      "scale": 0.1384083044982699,
+      "source": {
+        "x": 339,
+        "y": 757,
+        "w": 156,
+        "h": 291
+      },
+      "sourceSlot": 9,
+      "mirror": false
+    },
+    "helena.ne.walk_b": {
+      "sheet": "helena",
+      "x": 128,
+      "y": 128,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 22,
+        "y": 17,
+        "w": 23,
+        "h": 41
+      },
+      "scale": 0.1384083044982699,
+      "source": {
+        "x": 325,
+        "y": 1078,
+        "w": 164,
+        "h": 296
+      },
+      "sourceSlot": 13,
+      "mirror": true
+    },
+    "helena.ne.action": {
+      "sheet": "helena",
+      "x": 192,
+      "y": 128,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 23,
+        "y": 19,
+        "w": 22,
+        "h": 39
+      },
+      "scale": 0.1384083044982699,
+      "source": {
+        "x": 892,
+        "y": 758,
+        "w": 159,
+        "h": 285
+      },
+      "sourceSlot": 11,
+      "mirror": false
+    },
+    "helena.nw.idle": {
+      "sheet": "helena",
+      "x": 0,
+      "y": 192,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 23,
+        "y": 18,
+        "w": 17,
+        "h": 40
+      },
+      "scale": 0.1384083044982699,
+      "source": {
+        "x": 80,
+        "y": 1078,
+        "w": 124,
+        "h": 290
+      },
+      "sourceSlot": 12,
+      "mirror": false
+    },
+    "helena.nw.walk_a": {
+      "sheet": "helena",
+      "x": 64,
+      "y": 192,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 20,
+        "y": 17,
+        "w": 23,
+        "h": 41
+      },
+      "scale": 0.1384083044982699,
+      "source": {
+        "x": 325,
+        "y": 1078,
+        "w": 164,
+        "h": 296
+      },
+      "sourceSlot": 13,
+      "mirror": false
+    },
+    "helena.nw.walk_b": {
+      "sheet": "helena",
+      "x": 128,
+      "y": 192,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 20,
+        "y": 18,
+        "w": 22,
+        "h": 40
+      },
+      "scale": 0.1384083044982699,
+      "source": {
+        "x": 339,
+        "y": 757,
+        "w": 156,
+        "h": 291
+      },
+      "sourceSlot": 9,
+      "mirror": true
+    },
+    "helena.nw.action": {
+      "sheet": "helena",
+      "x": 192,
+      "y": 192,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 19,
+        "y": 18,
+        "w": 22,
+        "h": 40
+      },
+      "scale": 0.1384083044982699,
+      "source": {
+        "x": 858,
+        "y": 1079,
+        "w": 161,
+        "h": 286
+      },
+      "sourceSlot": 15,
+      "mirror": false
+    },
+    "davi.se.idle": {
+      "sheet": "davi",
+      "x": 0,
+      "y": 0,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 23,
+        "y": 18,
+        "w": 17,
+        "h": 40
+      },
+      "scale": 0.1413427561837456,
+      "source": {
+        "x": 78,
+        "y": 72,
+        "w": 123,
+        "h": 285
+      },
+      "sourceSlot": 0,
+      "mirror": false
+    },
+    "davi.se.walk_a": {
+      "sheet": "davi",
+      "x": 64,
+      "y": 0,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 21,
+        "y": 17,
+        "w": 23,
+        "h": 41
+      },
+      "scale": 0.1413427561837456,
+      "source": {
+        "x": 334,
+        "y": 72,
+        "w": 163,
+        "h": 288
+      },
+      "sourceSlot": 1,
+      "mirror": false
+    },
+    "davi.se.walk_b": {
+      "sheet": "davi",
+      "x": 128,
+      "y": 0,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 21,
+        "y": 18,
+        "w": 23,
+        "h": 40
+      },
+      "scale": 0.1413427561837456,
+      "source": {
+        "x": 324,
+        "y": 415,
+        "w": 164,
+        "h": 286
+      },
+      "sourceSlot": 5,
+      "mirror": true
+    },
+    "davi.se.action": {
+      "sheet": "davi",
+      "x": 192,
+      "y": 0,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 17,
+        "y": 18,
+        "w": 29,
+        "h": 40
+      },
+      "scale": 0.1413427561837456,
+      "source": {
+        "x": 847,
+        "y": 75,
+        "w": 204,
+        "h": 282
+      },
+      "sourceSlot": 3,
+      "mirror": false
+    },
+    "davi.sw.idle": {
+      "sheet": "davi",
+      "x": 0,
+      "y": 64,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 23,
+        "y": 17,
+        "w": 18,
+        "h": 41
+      },
+      "scale": 0.1413427561837456,
+      "source": {
+        "x": 78,
+        "y": 415,
+        "w": 128,
+        "h": 289
+      },
+      "sourceSlot": 4,
+      "mirror": false
+    },
+    "davi.sw.walk_a": {
+      "sheet": "davi",
+      "x": 64,
+      "y": 64,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 20,
+        "y": 18,
+        "w": 23,
+        "h": 40
+      },
+      "scale": 0.1413427561837456,
+      "source": {
+        "x": 324,
+        "y": 415,
+        "w": 164,
+        "h": 286
+      },
+      "sourceSlot": 5,
+      "mirror": false
+    },
+    "davi.sw.walk_b": {
+      "sheet": "davi",
+      "x": 128,
+      "y": 64,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 21,
+        "y": 17,
+        "w": 23,
+        "h": 41
+      },
+      "scale": 0.1413427561837456,
+      "source": {
+        "x": 334,
+        "y": 72,
+        "w": 163,
+        "h": 288
+      },
+      "sourceSlot": 1,
+      "mirror": true
+    },
+    "davi.sw.action": {
+      "sheet": "davi",
+      "x": 192,
+      "y": 64,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 17,
+        "y": 18,
+        "w": 28,
+        "h": 40
+      },
+      "scale": 0.1413427561837456,
+      "source": {
+        "x": 849,
+        "y": 415,
+        "w": 199,
+        "h": 282
+      },
+      "sourceSlot": 7,
+      "mirror": false
+    },
+    "davi.ne.idle": {
+      "sheet": "davi",
+      "x": 0,
+      "y": 128,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 23,
+        "y": 18,
+        "w": 18,
+        "h": 40
+      },
+      "scale": 0.1413427561837456,
+      "source": {
+        "x": 80,
+        "y": 763,
+        "w": 125,
+        "h": 280
+      },
+      "sourceSlot": 8,
+      "mirror": false
+    },
+    "davi.ne.walk_a": {
+      "sheet": "davi",
+      "x": 64,
+      "y": 128,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 20,
+        "y": 17,
+        "w": 24,
+        "h": 41
+      },
+      "scale": 0.1413427561837456,
+      "source": {
+        "x": 327,
+        "y": 763,
+        "w": 167,
+        "h": 289
+      },
+      "sourceSlot": 9,
+      "mirror": false
+    },
+    "davi.ne.walk_b": {
+      "sheet": "davi",
+      "x": 128,
+      "y": 128,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 21,
+        "y": 17,
+        "w": 24,
+        "h": 41
+      },
+      "scale": 0.1413427561837456,
+      "source": {
+        "x": 317,
+        "y": 1094,
+        "w": 168,
+        "h": 289
+      },
+      "sourceSlot": 13,
+      "mirror": true
+    },
+    "davi.ne.action": {
+      "sheet": "davi",
+      "x": 192,
+      "y": 128,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 21,
+        "y": 18,
+        "w": 26,
+        "h": 40
+      },
+      "scale": 0.1413427561837456,
+      "source": {
+        "x": 880,
+        "y": 761,
+        "w": 186,
+        "h": 282
+      },
+      "sourceSlot": 11,
+      "mirror": false
+    },
+    "davi.nw.idle": {
+      "sheet": "davi",
+      "x": 0,
+      "y": 192,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 23,
+        "y": 18,
+        "w": 18,
+        "h": 40
+      },
+      "scale": 0.1413427561837456,
+      "source": {
+        "x": 76,
+        "y": 1094,
+        "w": 128,
+        "h": 281
+      },
+      "sourceSlot": 12,
+      "mirror": false
+    },
+    "davi.nw.walk_a": {
+      "sheet": "davi",
+      "x": 64,
+      "y": 192,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 19,
+        "y": 17,
+        "w": 24,
+        "h": 41
+      },
+      "scale": 0.1413427561837456,
+      "source": {
+        "x": 317,
+        "y": 1094,
+        "w": 168,
+        "h": 289
+      },
+      "sourceSlot": 13,
+      "mirror": false
+    },
+    "davi.nw.walk_b": {
+      "sheet": "davi",
+      "x": 128,
+      "y": 192,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 20,
+        "y": 17,
+        "w": 24,
+        "h": 41
+      },
+      "scale": 0.1413427561837456,
+      "source": {
+        "x": 327,
+        "y": 763,
+        "w": 167,
+        "h": 289
+      },
+      "sourceSlot": 9,
+      "mirror": true
+    },
+    "davi.nw.action": {
+      "sheet": "davi",
+      "x": 192,
+      "y": 192,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 18,
+        "y": 18,
+        "w": 25,
+        "h": 40
+      },
+      "scale": 0.1413427561837456,
+      "source": {
+        "x": 854,
+        "y": 1094,
+        "w": 179,
+        "h": 281
+      },
+      "sourceSlot": 15,
+      "mirror": false
+    },
+    "keeper.se.idle": {
+      "sheet": "keeper",
+      "x": 0,
+      "y": 0,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 23,
+        "y": 18,
+        "w": 17,
+        "h": 40
+      },
+      "scale": 0.1386481802426343,
+      "source": {
+        "x": 84,
+        "y": 73,
+        "w": 126,
+        "h": 287
+      },
+      "sourceSlot": 0,
+      "mirror": false
+    },
+    "keeper.se.walk_a": {
+      "sheet": "keeper",
+      "x": 64,
+      "y": 0,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 20,
+        "y": 18,
+        "w": 23,
+        "h": 40
+      },
+      "scale": 0.1386481802426343,
+      "source": {
+        "x": 338,
+        "y": 73,
+        "w": 167,
+        "h": 287
+      },
+      "sourceSlot": 1,
+      "mirror": false
+    },
+    "keeper.se.walk_b": {
+      "sheet": "keeper",
+      "x": 128,
+      "y": 0,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 21,
+        "y": 18,
+        "w": 23,
+        "h": 40
+      },
+      "scale": 0.1386481802426343,
+      "source": {
+        "x": 336,
+        "y": 418,
+        "w": 165,
+        "h": 286
+      },
+      "sourceSlot": 5,
+      "mirror": true
+    },
+    "keeper.se.action": {
+      "sheet": "keeper",
+      "x": 192,
+      "y": 0,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 24,
+        "y": 18,
+        "w": 21,
+        "h": 40
+      },
+      "scale": 0.1386481802426343,
+      "source": {
+        "x": 909,
+        "y": 73,
+        "w": 148,
+        "h": 287
+      },
+      "sourceSlot": 3,
+      "mirror": false
+    },
+    "keeper.sw.idle": {
+      "sheet": "keeper",
+      "x": 0,
+      "y": 64,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 23,
+        "y": 18,
+        "w": 18,
+        "h": 40
+      },
+      "scale": 0.1386481802426343,
+      "source": {
+        "x": 82,
+        "y": 418,
+        "w": 130,
+        "h": 289
+      },
+      "sourceSlot": 4,
+      "mirror": false
+    },
+    "keeper.sw.walk_a": {
+      "sheet": "keeper",
+      "x": 64,
+      "y": 64,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 20,
+        "y": 18,
+        "w": 23,
+        "h": 40
+      },
+      "scale": 0.1386481802426343,
+      "source": {
+        "x": 336,
+        "y": 418,
+        "w": 165,
+        "h": 286
+      },
+      "sourceSlot": 5,
+      "mirror": false
+    },
+    "keeper.sw.walk_b": {
+      "sheet": "keeper",
+      "x": 128,
+      "y": 64,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 21,
+        "y": 18,
+        "w": 23,
+        "h": 40
+      },
+      "scale": 0.1386481802426343,
+      "source": {
+        "x": 338,
+        "y": 73,
+        "w": 167,
+        "h": 287
+      },
+      "sourceSlot": 1,
+      "mirror": true
+    },
+    "keeper.sw.action": {
+      "sheet": "keeper",
+      "x": 192,
+      "y": 64,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 20,
+        "y": 18,
+        "w": 20,
+        "h": 40
+      },
+      "scale": 0.1386481802426343,
+      "source": {
+        "x": 877,
+        "y": 418,
+        "w": 146,
+        "h": 289
+      },
+      "sourceSlot": 7,
+      "mirror": false
+    },
+    "keeper.ne.idle": {
+      "sheet": "keeper",
+      "x": 0,
+      "y": 128,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 23,
+        "y": 18,
+        "w": 18,
+        "h": 40
+      },
+      "scale": 0.1386481802426343,
+      "source": {
+        "x": 81,
+        "y": 763,
+        "w": 129,
+        "h": 288
+      },
+      "sourceSlot": 8,
+      "mirror": false
+    },
+    "keeper.ne.walk_a": {
+      "sheet": "keeper",
+      "x": 64,
+      "y": 128,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 20,
+        "y": 17,
+        "w": 24,
+        "h": 41
+      },
+      "scale": 0.1386481802426343,
+      "source": {
+        "x": 337,
+        "y": 763,
+        "w": 173,
+        "h": 295
+      },
+      "sourceSlot": 9,
+      "mirror": false
+    },
+    "keeper.ne.walk_b": {
+      "sheet": "keeper",
+      "x": 128,
+      "y": 128,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 20,
+        "y": 18,
+        "w": 24,
+        "h": 40
+      },
+      "scale": 0.1386481802426343,
+      "source": {
+        "x": 331,
+        "y": 1107,
+        "w": 170,
+        "h": 292
+      },
+      "sourceSlot": 13,
+      "mirror": true
+    },
+    "keeper.ne.action": {
+      "sheet": "keeper",
+      "x": 192,
+      "y": 128,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 24,
+        "y": 19,
+        "w": 20,
+        "h": 39
+      },
+      "scale": 0.1386481802426343,
+      "source": {
+        "x": 913,
+        "y": 767,
+        "w": 145,
+        "h": 284
+      },
+      "sourceSlot": 11,
+      "mirror": false
+    },
+    "keeper.nw.idle": {
+      "sheet": "keeper",
+      "x": 0,
+      "y": 192,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 23,
+        "y": 18,
+        "w": 18,
+        "h": 40
+      },
+      "scale": 0.1386481802426343,
+      "source": {
+        "x": 81,
+        "y": 1107,
+        "w": 129,
+        "h": 290
+      },
+      "sourceSlot": 12,
+      "mirror": false
+    },
+    "keeper.nw.walk_a": {
+      "sheet": "keeper",
+      "x": 64,
+      "y": 192,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 20,
+        "y": 18,
+        "w": 24,
+        "h": 40
+      },
+      "scale": 0.1386481802426343,
+      "source": {
+        "x": 331,
+        "y": 1107,
+        "w": 170,
+        "h": 292
+      },
+      "sourceSlot": 13,
+      "mirror": false
+    },
+    "keeper.nw.walk_b": {
+      "sheet": "keeper",
+      "x": 128,
+      "y": 192,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 20,
+        "y": 17,
+        "w": 24,
+        "h": 41
+      },
+      "scale": 0.1386481802426343,
+      "source": {
+        "x": 337,
+        "y": 763,
+        "w": 173,
+        "h": 295
+      },
+      "sourceSlot": 9,
+      "mirror": true
+    },
+    "keeper.nw.action": {
+      "sheet": "keeper",
+      "x": 192,
+      "y": 192,
+      "w": 64,
+      "h": 64,
+      "pivot": [
+        32,
+        58
+      ],
+      "content": {
+        "x": 20,
+        "y": 18,
+        "w": 20,
+        "h": 40
+      },
+      "scale": 0.1386481802426343,
+      "source": {
+        "x": 882,
+        "y": 1107,
+        "w": 143,
+        "h": 290
+      },
+      "sourceSlot": 15,
+      "mirror": false
+    }
+  }
+}

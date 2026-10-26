@@ -1,0 +1,17 @@
+{
+  "priorities": ["desenvolvimento", "oportunidades", "consistência", "trabalho coletivo"],
+  "traits": ["Reservado", "Comunicativo", "Competitivo", "Cooperativo"],
+  "listen": {
+    "desenvolvimento": "Quero evoluir com um plano claro. Podemos combinar uma devolutiva depois do treino?",
+    "oportunidades": "Quero estar preparado quando a chance chegar. Prefiro uma orientação concreta a uma promessa de titularidade.",
+    "consistência": "Preciso entender os critérios e manter uma rotina. Uma conversa honesta me ajuda a trabalhar.",
+    "trabalho coletivo": "Quero ajudar o grupo. Vamos rever como meu trabalho pode facilitar a vida dos companheiros?"
+  },
+  "actions": {
+    "listen": {"label":"Ouvir o atleta", "description":"Uma conversa · descubra sua prioridade."},
+    "feedback": {"label":"Comentar a observação de Davi", "description":"Uma conversa · exige a observação do prólogo."},
+    "promise": {"label":"Combinar devolutiva do treino", "description":"Uma conversa · treine e entregue antes da próxima partida."},
+    "deliver": {"label":"Entregar devolutiva combinada", "description":"Sem custo extra · exige treino nesta rodada."},
+    "repair": {"label":"Reconhecer a promessa quebrada", "description":"Uma conversa · abre espaço para reconstruir a confiança."}
+  }
+}

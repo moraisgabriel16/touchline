@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "clubs": [
+    {
+      "name": "Aurora Atlético",
+      "short": "AUR",
+      "city": "Santa Aurora",
+      "strength": 67
+    },
+    {
+      "name": "União Ferroviária",
+      "short": "UFE",
+      "city": "Santa Aurora",
+      "strength": 66
+    },
+    {
+      "name": "EC Horizonte",
+      "short": "ECH",
+      "city": "Vale Claro",
+      "strength": 71
+    },
+    {
+      "name": "Atlético Ribeirense",
+      "short": "RIB",
+      "city": "Ribeira Alta",
+      "strength": 64
+    }
+  ],
+  "players": [
+    {
+      "id": "g01",
+      "name": "Rafael Costa",
+      "position": "GOL",
+      "age": 29,
+      "skill": 68,
+      "condition": 100
+    },
+    {
+      "id": "d01",
+      "name": "Lucas Moura",
+      "position": "LD",
+      "age": 24,
+      "skill": 64,
+      "condition": 100
+    },
+    {
+      "id": "d02",
+      "name": "André Batista",
+      "position": "ZAG",
+      "age": 31,
+      "skill": 71,
+      "condition": 100
+    },
+    {
+      "id": "d03",
+      "name": "Bruno Reis",
+      "position": "ZAG",
+      "age": 26,
+      "skill": 66,
+      "condition": 100
+    },
+    {
+      "id": "d04",
+      "name": "Caio Mendes",
+      "position": "LE",
+      "age": 22,
+      "skill": 63,
+      "condition": 100
+    },
+    {
+      "id": "m01",
+      "name": "Henrique Luz",
+      "position": "VOL",
+      "age": 28,
+      "skill": 70,
+      "condition": 100
+    },
+    {
+      "id": "m02",
+      "name": "Pedro Vidal",
+      "position": "VOL",
+      "age": 25,
+      "skill": 65,
+      "condition": 100
+    },
+    {
+      "id": "m03",
+      "name": "Tiago Lemos",
+      "position": "MEI",
+      "age": 27,
+      "skill": 72,
+      "condition": 100
+    },
+    {
+      "id": "m04",
+      "name": "Davi Nascimento",
+      "position": "MEI",
+      "age": 18,
+      "skill": 67,
+      "condition": 100
+    },
+    {
+      "id": "a01",
+      "name": "Gabriel Paiva",
+      "position": "ATA",
+      "age": 24,
+      "skill": 69,
+      "condition": 100
+    },
+    {
+      "id": "a02",
+      "name": "Mateus Rocha",
+      "position": "ATA",
+      "age": 30,
+      "skill": 73,
+      "condition": 100
+    },
+    {
+      "id": "g02",
+      "name": "Vinícius Amaral",
+      "position": "GOL",
+      "age": 21,
+      "skill": 59,
+      "condition": 100
+    },
+    {
+      "id": "d05",
+      "name": "Felipe Salles",
+      "position": "ZAG",
+      "age": 20,
+      "skill": 61,
+      "condition": 100
+    },
+    {
+      "id": "d06",
+      "name": "Samuel Diniz",
+      "position": "LD",
+      "age": 23,
+      "skill": 60,
+      "condition": 100
+    },
+    {
+      "id": "m05",
+      "name": "Igor Tavares",
+      "position": "VOL",
+      "age": 22,
+      "skill": 62,
+      "condition": 100
+    },
+    {
+      "id": "m06",
+      "name": "Danilo Farias",
+      "position": "MEI",
+      "age": 19,
+      "skill": 64,
+      "condition": 100
+    },
+    {
+      "id": "a03",
+      "name": "Renan Duarte",
+      "position": "ATA",
+      "age": 21,
+      "skill": 63,
+      "condition": 100
+    },
+    {
+      "id": "a04",
+      "name": "Vitor Campos",
+      "position": "ATA",
+      "age": 19,
+      "skill": 60,
+      "condition": 100
+    }
+  ]
+}

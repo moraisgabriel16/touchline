@@ -1,0 +1,27 @@
+{
+  "start_note": "2027 · Chegada a Santa Aurora. Um novo começo no futebol.",
+  "objectives": {
+    "start": "Examine a caixa de Antônio no apartamento.",
+    "meet": "Conheça Helena na diretoria do Aurora.",
+    "observe": "Observe Davi no campo do CT.",
+    "report": "Volte à diretoria e converse com Helena.",
+    "done": "Primeiro relatório entregue. Continue sua temporada."
+  },
+  "dialogues": {
+    "notebook": {"speaker": "A caixa de Antônio", "text": "Entre uma foto de 1998 e um ingresso antigo, você encontra um caderno sobre a base do Aurora.\n\n“Não olhe só para a bola. Veja quem cria espaço para os outros.”\n\nAs anotações são um bom começo para o seu olhar de analista.", "choices": [{"label": "Estudar o caderno · +20 XP", "action": "read_notebook"}, {"label": "Guardar para depois", "action": "close"}]},
+    "notebook_done": {"speaker": "A caixa de Antônio", "text": "O caderno está no seu diário. A promessa de cuidar de quem está começando continua com você.", "choices": [{"label": "Fechar a caixa", "action": "close"}]},
+    "helena": {"speaker": "Helena Duarte · Diretora esportiva", "text": "Bem-vindo ao Aurora. Antes das planilhas, gosto de conhecer quem trabalha aqui.\n\nDavi, da nossa base, está treinando no CT. Você pode observá-lo e depois me contar o que percebeu? Sem pressa para responder.", "choices": [{"label": "Aceitar a observação no CT", "action": "accept_task"}, {"label": "Quero conhecer o clube primeiro", "action": "close"}]},
+    "helena_wait": {"speaker": "Helena Duarte", "text": "Davi está no campo de treino. Observe como ele se movimenta quando não recebe a bola. Depois conversamos aqui.", "choices": [{"label": "Vou ao CT", "action": "close"}]},
+    "helena_report": {"speaker": "Helena Duarte", "text": "O que você percebeu sobre Davi?\n\nVocê mostra suas notas: ele abre espaço antes de receber a bola, mas precisa de apoio quando é pressionado. Helena escuta com atenção.", "choices": [{"label": "Entregar observação · +50 XP", "action": "deliver_report"}, {"label": "Revisar as notas primeiro", "action": "close"}]},
+    "helena_done": {"speaker": "Helena Duarte", "text": "Seu relatório está comigo. Gostei do cuidado com o desenvolvimento do garoto. Vamos continuar essa conversa ao longo da temporada.", "choices": [{"label": "Até a próxima, Helena", "action": "close"}]},
+    "davi": {"speaker": "Davi Nascimento · Atleta da base", "text": "Você acompanha uma sequência de treino. Davi se oferece entre as linhas e atrai a marcação para liberar um colega. Quando recebe de costas, ainda demora a decidir.\n\nVocê registra os dois pontos sem reduzir o garoto a um número.", "choices": [{"label": "Registrar observação · +30 XP", "action": "observe_davi"}, {"label": "Continuar olhando o campo", "action": "close"}]},
+    "davi_done": {"speaker": "Caderno de campo", "text": "Observação registrada: boa movimentação sem bola; desenvolver decisão sob pressão. Suas notas ficam no diário durante esta sessão.", "choices": [{"label": "Guardar as notas", "action": "close"}]},
+    "desk": {"speaker": "Mesa de trabalho", "text": "Aqui você organiza o elenco e prepara a próxima rodada. A gestão também continua acessível pelo menu lateral, de qualquer ambiente.", "choices": [{"label": "Abrir elenco do Aurora", "action": "management"}, {"label": "Voltar ao ambiente", "action": "close"}]}
+  },
+  "effects": {
+    "read_notebook": {"flag": "notebook", "xp": 20, "analysis": 1, "note": "Estudei o caderno de Antônio. Análise +1."},
+    "accept_task": {"flag": "accepted", "note": "Aceitei observar Davi no CT para Helena. Posso retomar a tarefa quando quiser."},
+    "observe_davi": {"flag": "observed", "xp": 30, "analysis": 1, "note": "Observei Davi: cria espaço sem bola, precisa de apoio sob pressão. Análise +1."},
+    "deliver_report": {"flag": "report", "xp": 50, "communication": 1, "trust": 1, "note": "Entreguei o primeiro relatório. Helena reconheceu meu cuidado com a base. Comunicação +1."}
+  }
+}

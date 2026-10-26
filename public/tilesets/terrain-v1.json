@@ -1,0 +1,129 @@
+{
+  "file": "terrain-v1.png",
+  "tileWidth": 64,
+  "tileHeight": 32,
+  "columns": 4,
+  "rows": 3,
+  "frames": {
+    "residential.oak_a": {
+      "x": 0,
+      "y": 0,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ]
+    },
+    "residential.oak_b": {
+      "x": 64,
+      "y": 0,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ]
+    },
+    "residential.terracotta": {
+      "x": 128,
+      "y": 0,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ]
+    },
+    "residential.rug": {
+      "x": 192,
+      "y": 0,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ]
+    },
+    "club.concrete_a": {
+      "x": 0,
+      "y": 32,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ]
+    },
+    "club.concrete_b": {
+      "x": 64,
+      "y": 32,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ]
+    },
+    "club.ceramic": {
+      "x": 128,
+      "y": 32,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ]
+    },
+    "club.rug": {
+      "x": 192,
+      "y": 32,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ]
+    },
+    "training.grass_a": {
+      "x": 0,
+      "y": 64,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ]
+    },
+    "training.grass_b": {
+      "x": 64,
+      "y": 64,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ]
+    },
+    "training.dirt": {
+      "x": 128,
+      "y": 64,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ]
+    },
+    "training.concrete": {
+      "x": 192,
+      "y": 64,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ]
+    }
+  }
+}

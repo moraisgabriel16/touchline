@@ -1,0 +1,803 @@
+{
+  "version": 1,
+  "clubs": [
+    {
+      "id": "aurora",
+      "name": "Aurora Atlético",
+      "colors": [
+        "#142d49",
+        "#dfb15f"
+      ],
+      "symbol": "Sol nascente e bola"
+    },
+    {
+      "id": "ferroviaria",
+      "name": "União Ferroviária",
+      "colors": [
+        "#773e4c",
+        "#eee0bc"
+      ],
+      "symbol": "Roda ferroviária e trilhos"
+    },
+    {
+      "id": "horizonte",
+      "name": "EC Horizonte",
+      "colors": [
+        "#286347",
+        "#f4f0df"
+      ],
+      "symbol": "Arco de horizonte e sol"
+    },
+    {
+      "id": "ribeirense",
+      "name": "Atlético Ribeirense",
+      "colors": [
+        "#b7443f",
+        "#222c32"
+      ],
+      "symbol": "Onda de rio e bola"
+    },
+    {
+      "id": "mare_coral",
+      "name": "Maré de Coral FC",
+      "colors": [
+        "#167f87",
+        "#ec7867",
+        "#f4eddb"
+      ],
+      "symbol": "Onda e concha"
+    },
+    {
+      "id": "serra_cobre",
+      "name": "Serra do Cobre AC",
+      "colors": [
+        "#244d40",
+        "#bd784b",
+        "#f4eddb"
+      ],
+      "symbol": "Montanhas e pinheiro"
+    },
+    {
+      "id": "sol_pedra",
+      "name": "Sol de Pedra EC",
+      "colors": [
+        "#edbe40",
+        "#292b34"
+      ],
+      "symbol": "Sol sobre rocha"
+    },
+    {
+      "id": "flor_cerrado",
+      "name": "Flor do Cerrado SC",
+      "colors": [
+        "#704582",
+        "#dbba69",
+        "#f4eddb"
+      ],
+      "symbol": "Flor de cinco pétalas"
+    },
+    {
+      "id": "raiz_barro",
+      "name": "Raiz do Barro EC",
+      "colors": [
+        "#ce6635",
+        "#51372c",
+        "#e8cf9b"
+      ],
+      "symbol": "Raízes e bola"
+    },
+    {
+      "id": "farol_enseada",
+      "name": "Farol da Enseada AC",
+      "colors": [
+        "#315eb5",
+        "#ffffff",
+        "#b8c8d6"
+      ],
+      "symbol": "Farol e feixes de luz"
+    },
+    {
+      "id": "bussola_vale",
+      "name": "Bússola do Vale FC",
+      "colors": [
+        "#383e78",
+        "#bfce53",
+        "#f4eddb"
+      ],
+      "symbol": "Bússola de quatro pontas"
+    },
+    {
+      "id": "vila_neon",
+      "name": "Atlético Vila Neon",
+      "colors": [
+        "#303641",
+        "#df80a5",
+        "#c3cbd3"
+      ],
+      "symbol": "Ponte e estrela"
+    }
+  ],
+  "categories": [
+    {
+      "id": "identity",
+      "title": "Brasões e uniformes",
+      "brief": "Quatro clubes fictícios, oito camisas e quatro bandeiras.",
+      "items": [
+        {
+          "id": "aurora.crest",
+          "label": "Brasão · Aurora Atlético",
+          "kind": "crest",
+          "club": 0
+        },
+        {
+          "id": "aurora.home",
+          "label": "Casa · Aurora Atlético",
+          "kind": "shirt",
+          "club": 0
+        },
+        {
+          "id": "aurora.away",
+          "label": "Visitante · Aurora Atlético",
+          "kind": "shirt",
+          "club": 0
+        },
+        {
+          "id": "aurora.flag",
+          "label": "Bandeira · Aurora Atlético",
+          "kind": "flag",
+          "club": 0
+        },
+        {
+          "id": "ferroviaria.crest",
+          "label": "Brasão · União Ferroviária",
+          "kind": "crest",
+          "club": 1
+        },
+        {
+          "id": "ferroviaria.home",
+          "label": "Casa · União Ferroviária",
+          "kind": "shirt",
+          "club": 1
+        },
+        {
+          "id": "ferroviaria.away",
+          "label": "Visitante · União Ferroviária",
+          "kind": "shirt",
+          "club": 1
+        },
+        {
+          "id": "ferroviaria.flag",
+          "label": "Bandeira · União Ferroviária",
+          "kind": "flag",
+          "club": 1
+        },
+        {
+          "id": "horizonte.crest",
+          "label": "Brasão · EC Horizonte",
+          "kind": "crest",
+          "club": 2
+        },
+        {
+          "id": "horizonte.home",
+          "label": "Casa · EC Horizonte",
+          "kind": "shirt",
+          "club": 2
+        },
+        {
+          "id": "horizonte.away",
+          "label": "Visitante · EC Horizonte",
+          "kind": "shirt",
+          "club": 2
+        },
+        {
+          "id": "horizonte.flag",
+          "label": "Bandeira · EC Horizonte",
+          "kind": "flag",
+          "club": 2
+        },
+        {
+          "id": "ribeirense.crest",
+          "label": "Brasão · Atlético Ribeirense",
+          "kind": "crest",
+          "club": 3
+        },
+        {
+          "id": "ribeirense.home",
+          "label": "Casa · Atlético Ribeirense",
+          "kind": "shirt",
+          "club": 3
+        },
+        {
+          "id": "ribeirense.away",
+          "label": "Visitante · Atlético Ribeirense",
+          "kind": "shirt",
+          "club": 3
+        },
+        {
+          "id": "ribeirense.flag",
+          "label": "Bandeira · Atlético Ribeirense",
+          "kind": "flag",
+          "club": 3
+        }
+      ]
+    },
+    {
+      "id": "stadiums",
+      "title": "Estádios",
+      "brief": "Miniaturas dos quatro estádios e peças para construir suas instalações.",
+      "items": [
+        {
+          "id": "aurora.stadium",
+          "label": "Estádio · Aurora Atlético",
+          "kind": "miniature",
+          "club": 0
+        },
+        {
+          "id": "ferroviaria.stadium",
+          "label": "Estádio · União Ferroviária",
+          "kind": "miniature",
+          "club": 1
+        },
+        {
+          "id": "horizonte.stadium",
+          "label": "Estádio · EC Horizonte",
+          "kind": "miniature",
+          "club": 2
+        },
+        {
+          "id": "ribeirense.stadium",
+          "label": "Estádio · Atlético Ribeirense",
+          "kind": "miniature",
+          "club": 3
+        },
+        {
+          "id": "stadium.terrace_left",
+          "label": "Arquibancada descoberta · esquerda",
+          "kind": "prop"
+        },
+        {
+          "id": "stadium.terrace_right",
+          "label": "Arquibancada descoberta · direita",
+          "kind": "prop"
+        },
+        {
+          "id": "stadium.covered_left",
+          "label": "Arquibancada coberta · esquerda",
+          "kind": "prop"
+        },
+        {
+          "id": "stadium.covered_right",
+          "label": "Arquibancada coberta · direita",
+          "kind": "prop"
+        },
+        {
+          "id": "stadium.goal",
+          "label": "Trave e rede",
+          "kind": "prop"
+        },
+        {
+          "id": "stadium.scoreboard",
+          "label": "Placar manual",
+          "kind": "prop"
+        },
+        {
+          "id": "stadium.tunnel",
+          "label": "Túnel dos jogadores",
+          "kind": "prop"
+        },
+        {
+          "id": "stadium.floodlight",
+          "label": "Torre de iluminação",
+          "kind": "prop"
+        },
+        {
+          "id": "stadium.gate",
+          "label": "Portão do estádio",
+          "kind": "prop"
+        },
+        {
+          "id": "stadium.turnstile",
+          "label": "Catraca",
+          "kind": "prop"
+        },
+        {
+          "id": "stadium.tickets",
+          "label": "Bilheteria",
+          "kind": "prop"
+        },
+        {
+          "id": "stadium.fence",
+          "label": "Muro e alambrado",
+          "kind": "prop"
+        }
+      ]
+    },
+    {
+      "id": "facilities",
+      "title": "Clubes e instalações",
+      "brief": "Sedes, ambientes de trabalho e equipamentos de bastidores.",
+      "items": [
+        {
+          "id": "aurora.headquarters",
+          "label": "Sede · Aurora Atlético",
+          "kind": "building",
+          "club": 0
+        },
+        {
+          "id": "ferroviaria.headquarters",
+          "label": "Sede · União Ferroviária",
+          "kind": "building",
+          "club": 1
+        },
+        {
+          "id": "horizonte.headquarters",
+          "label": "Sede · EC Horizonte",
+          "kind": "building",
+          "club": 2
+        },
+        {
+          "id": "ribeirense.headquarters",
+          "label": "Sede · Atlético Ribeirense",
+          "kind": "building",
+          "club": 3
+        },
+        {
+          "id": "club.reception",
+          "label": "Recepção",
+          "kind": "interior"
+        },
+        {
+          "id": "club.gym",
+          "label": "Academia",
+          "kind": "interior"
+        },
+        {
+          "id": "club.physio",
+          "label": "Fisioterapia",
+          "kind": "interior"
+        },
+        {
+          "id": "club.locker_room",
+          "label": "Vestiário",
+          "kind": "interior"
+        },
+        {
+          "id": "club.tactics",
+          "label": "Quadro tático",
+          "kind": "prop"
+        },
+        {
+          "id": "club.dugout",
+          "label": "Banco de reservas coberto",
+          "kind": "prop"
+        },
+        {
+          "id": "club.lockers",
+          "label": "Armários de vestiário",
+          "kind": "prop"
+        },
+        {
+          "id": "club.boots",
+          "label": "Estante de chuteiras",
+          "kind": "prop"
+        },
+        {
+          "id": "club.bus",
+          "label": "Ônibus do clube",
+          "kind": "prop"
+        },
+        {
+          "id": "club.merchandise",
+          "label": "Barraca do torcedor",
+          "kind": "prop"
+        },
+        {
+          "id": "club.flagpole",
+          "label": "Bandeira do clube",
+          "kind": "prop"
+        },
+        {
+          "id": "club.trophies",
+          "label": "Armário de troféus",
+          "kind": "prop"
+        }
+      ]
+    },
+    {
+      "id": "crowd",
+      "title": "Torcida",
+      "brief": "Grupos estáticos para compor arquibancadas e encontros no bairro.",
+      "items": [
+        {
+          "id": "aurora.supporters_standing",
+          "label": "Em pé · Aurora Atlético",
+          "kind": "crowd",
+          "club": 0
+        },
+        {
+          "id": "aurora.supporters_seated",
+          "label": "Sentados · Aurora Atlético",
+          "kind": "crowd",
+          "club": 0
+        },
+        {
+          "id": "aurora.supporters_drums",
+          "label": "Bateria · Aurora Atlético",
+          "kind": "crowd",
+          "club": 0
+        },
+        {
+          "id": "aurora.supporters_flags",
+          "label": "Bandeiras · Aurora Atlético",
+          "kind": "crowd",
+          "club": 0
+        },
+        {
+          "id": "ferroviaria.supporters_standing",
+          "label": "Em pé · União Ferroviária",
+          "kind": "crowd",
+          "club": 1
+        },
+        {
+          "id": "ferroviaria.supporters_seated",
+          "label": "Sentados · União Ferroviária",
+          "kind": "crowd",
+          "club": 1
+        },
+        {
+          "id": "ferroviaria.supporters_drums",
+          "label": "Bateria · União Ferroviária",
+          "kind": "crowd",
+          "club": 1
+        },
+        {
+          "id": "ferroviaria.supporters_flags",
+          "label": "Bandeiras · União Ferroviária",
+          "kind": "crowd",
+          "club": 1
+        },
+        {
+          "id": "horizonte.supporters_standing",
+          "label": "Em pé · EC Horizonte",
+          "kind": "crowd",
+          "club": 2
+        },
+        {
+          "id": "horizonte.supporters_seated",
+          "label": "Sentados · EC Horizonte",
+          "kind": "crowd",
+          "club": 2
+        },
+        {
+          "id": "horizonte.supporters_drums",
+          "label": "Bateria · EC Horizonte",
+          "kind": "crowd",
+          "club": 2
+        },
+        {
+          "id": "horizonte.supporters_flags",
+          "label": "Bandeiras · EC Horizonte",
+          "kind": "crowd",
+          "club": 2
+        },
+        {
+          "id": "ribeirense.supporters_standing",
+          "label": "Em pé · Atlético Ribeirense",
+          "kind": "crowd",
+          "club": 3
+        },
+        {
+          "id": "ribeirense.supporters_seated",
+          "label": "Sentados · Atlético Ribeirense",
+          "kind": "crowd",
+          "club": 3
+        },
+        {
+          "id": "ribeirense.supporters_drums",
+          "label": "Bateria · Atlético Ribeirense",
+          "kind": "crowd",
+          "club": 3
+        },
+        {
+          "id": "ribeirense.supporters_flags",
+          "label": "Bandeiras · Atlético Ribeirense",
+          "kind": "crowd",
+          "club": 3
+        }
+      ]
+    },
+    {
+      "id": "varzea",
+      "title": "Futebol de várzea",
+      "brief": "Terrenos, campo de bairro e objetos do futebol amador.",
+      "items": [
+        {
+          "id": "varzea.grass",
+          "label": "Grama irregular",
+          "kind": "terrain"
+        },
+        {
+          "id": "varzea.dirt",
+          "label": "Terra batida",
+          "kind": "terrain"
+        },
+        {
+          "id": "varzea.gravel",
+          "label": "Caminho de cascalho",
+          "kind": "terrain"
+        },
+        {
+          "id": "varzea.chalk",
+          "label": "Grama com linha de cal",
+          "kind": "terrain"
+        },
+        {
+          "id": "varzea.pitch",
+          "label": "Campo de várzea",
+          "kind": "miniature"
+        },
+        {
+          "id": "varzea.fence",
+          "label": "Cerca de arame",
+          "kind": "prop"
+        },
+        {
+          "id": "varzea.goal",
+          "label": "Trave desgastada",
+          "kind": "prop"
+        },
+        {
+          "id": "varzea.wooden_goal",
+          "label": "Gol de madeira",
+          "kind": "prop"
+        },
+        {
+          "id": "varzea.bench",
+          "label": "Banco de madeira",
+          "kind": "prop"
+        },
+        {
+          "id": "varzea.tires",
+          "label": "Pneus de treino",
+          "kind": "prop"
+        },
+        {
+          "id": "varzea.bin",
+          "label": "Lixeira do campo",
+          "kind": "prop"
+        },
+        {
+          "id": "varzea.water",
+          "label": "Água na beira do campo",
+          "kind": "prop"
+        },
+        {
+          "id": "varzea.snack_cart",
+          "label": "Carrinho de lanche",
+          "kind": "prop"
+        },
+        {
+          "id": "varzea.scoreboard",
+          "label": "Placar do bairro",
+          "kind": "prop"
+        },
+        {
+          "id": "varzea.changing_room",
+          "label": "Vestiário simples",
+          "kind": "building"
+        },
+        {
+          "id": "varzea.balls",
+          "label": "Caixa de bolas",
+          "kind": "prop"
+        }
+      ]
+    },
+    {
+      "id": "identity-coast",
+      "title": "Litoral e serra",
+      "brief": "Maré de Coral, Serra do Cobre, Sol de Pedra e Flor do Cerrado. Quatro identidades visuais para futuros clubes.",
+      "items": [
+        {
+          "id": "mare_coral.crest",
+          "label": "Brasão · Maré de Coral FC",
+          "kind": "crest",
+          "club": 4
+        },
+        {
+          "id": "mare_coral.home",
+          "label": "Casa · Maré de Coral FC",
+          "kind": "shirt",
+          "club": 4
+        },
+        {
+          "id": "mare_coral.away",
+          "label": "Visitante · Maré de Coral FC",
+          "kind": "shirt",
+          "club": 4
+        },
+        {
+          "id": "mare_coral.flag",
+          "label": "Bandeira · Maré de Coral FC",
+          "kind": "flag",
+          "club": 4
+        },
+        {
+          "id": "serra_cobre.crest",
+          "label": "Brasão · Serra do Cobre AC",
+          "kind": "crest",
+          "club": 5
+        },
+        {
+          "id": "serra_cobre.home",
+          "label": "Casa · Serra do Cobre AC",
+          "kind": "shirt",
+          "club": 5
+        },
+        {
+          "id": "serra_cobre.away",
+          "label": "Visitante · Serra do Cobre AC",
+          "kind": "shirt",
+          "club": 5
+        },
+        {
+          "id": "serra_cobre.flag",
+          "label": "Bandeira · Serra do Cobre AC",
+          "kind": "flag",
+          "club": 5
+        },
+        {
+          "id": "sol_pedra.crest",
+          "label": "Brasão · Sol de Pedra EC",
+          "kind": "crest",
+          "club": 6
+        },
+        {
+          "id": "sol_pedra.home",
+          "label": "Casa · Sol de Pedra EC",
+          "kind": "shirt",
+          "club": 6
+        },
+        {
+          "id": "sol_pedra.away",
+          "label": "Visitante · Sol de Pedra EC",
+          "kind": "shirt",
+          "club": 6
+        },
+        {
+          "id": "sol_pedra.flag",
+          "label": "Bandeira · Sol de Pedra EC",
+          "kind": "flag",
+          "club": 6
+        },
+        {
+          "id": "flor_cerrado.crest",
+          "label": "Brasão · Flor do Cerrado SC",
+          "kind": "crest",
+          "club": 7
+        },
+        {
+          "id": "flor_cerrado.home",
+          "label": "Casa · Flor do Cerrado SC",
+          "kind": "shirt",
+          "club": 7
+        },
+        {
+          "id": "flor_cerrado.away",
+          "label": "Visitante · Flor do Cerrado SC",
+          "kind": "shirt",
+          "club": 7
+        },
+        {
+          "id": "flor_cerrado.flag",
+          "label": "Bandeira · Flor do Cerrado SC",
+          "kind": "flag",
+          "club": 7
+        }
+      ]
+    },
+    {
+      "id": "identity-city",
+      "title": "Bairros e caminhos",
+      "brief": "Raiz do Barro, Farol da Enseada, Bússola do Vale e Vila Neon. Quatro identidades visuais para futuros clubes.",
+      "items": [
+        {
+          "id": "raiz_barro.crest",
+          "label": "Brasão · Raiz do Barro EC",
+          "kind": "crest",
+          "club": 8
+        },
+        {
+          "id": "raiz_barro.home",
+          "label": "Casa · Raiz do Barro EC",
+          "kind": "shirt",
+          "club": 8
+        },
+        {
+          "id": "raiz_barro.away",
+          "label": "Visitante · Raiz do Barro EC",
+          "kind": "shirt",
+          "club": 8
+        },
+        {
+          "id": "raiz_barro.flag",
+          "label": "Bandeira · Raiz do Barro EC",
+          "kind": "flag",
+          "club": 8
+        },
+        {
+          "id": "farol_enseada.crest",
+          "label": "Brasão · Farol da Enseada AC",
+          "kind": "crest",
+          "club": 9
+        },
+        {
+          "id": "farol_enseada.home",
+          "label": "Casa · Farol da Enseada AC",
+          "kind": "shirt",
+          "club": 9
+        },
+        {
+          "id": "farol_enseada.away",
+          "label": "Visitante · Farol da Enseada AC",
+          "kind": "shirt",
+          "club": 9
+        },
+        {
+          "id": "farol_enseada.flag",
+          "label": "Bandeira · Farol da Enseada AC",
+          "kind": "flag",
+          "club": 9
+        },
+        {
+          "id": "bussola_vale.crest",
+          "label": "Brasão · Bússola do Vale FC",
+          "kind": "crest",
+          "club": 10
+        },
+        {
+          "id": "bussola_vale.home",
+          "label": "Casa · Bússola do Vale FC",
+          "kind": "shirt",
+          "club": 10
+        },
+        {
+          "id": "bussola_vale.away",
+          "label": "Visitante · Bússola do Vale FC",
+          "kind": "shirt",
+          "club": 10
+        },
+        {
+          "id": "bussola_vale.flag",
+          "label": "Bandeira · Bússola do Vale FC",
+          "kind": "flag",
+          "club": 10
+        },
+        {
+          "id": "vila_neon.crest",
+          "label": "Brasão · Atlético Vila Neon",
+          "kind": "crest",
+          "club": 11
+        },
+        {
+          "id": "vila_neon.home",
+          "label": "Casa · Atlético Vila Neon",
+          "kind": "shirt",
+          "club": 11
+        },
+        {
+          "id": "vila_neon.away",
+          "label": "Visitante · Atlético Vila Neon",
+          "kind": "shirt",
+          "club": 11
+        },
+        {
+          "id": "vila_neon.flag",
+          "label": "Bandeira · Atlético Vila Neon",
+          "kind": "flag",
+          "club": 11
+        }
+      ]
+    }
+  ]
+}

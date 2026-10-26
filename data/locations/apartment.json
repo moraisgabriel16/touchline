@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "vila_palmeiras.apartment",
+  "bounds": [-5, -4, 5, 4],
+  "spawn": [0.5, 1.8],
+  "props": [
+    {"id": "bed", "tile": [-3.4, -1.9], "size": [1.45, 2.3], "height": 15, "color": "617f85", "kind": "bed"},
+    {"id": "desk", "tile": [2.5, -2.5], "size": [2.0, 0.8], "height": 23, "color": "ad7950", "kind": "desk"},
+    {"id": "antonio_box", "tile": [2.3, -0.5], "size": [0.7, 0.7], "height": 12, "color": "dba453", "kind": "box", "interaction": "antonio_box"},
+    {"id": "cabinet", "tile": [-0.7, -3.2], "size": [1.3, 0.7], "height": 39, "color": "8f6750", "kind": "cabinet"},
+    {"id": "plant", "tile": [4.0, -2.9], "size": [0.6, 0.6], "height": 14, "color": "aa6c49", "kind": "plant"}
+  ]
+}

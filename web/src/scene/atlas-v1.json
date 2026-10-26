@@ -1,0 +1,841 @@
+{
+  "version": 1,
+  "tileWidth": 64,
+  "tileHeight": 32,
+  "filter": "nearest",
+  "sheets": {
+    "residential": {
+      "file": "residential-v1.png",
+      "width": 640,
+      "height": 512
+    },
+    "club": {
+      "file": "club-v1.png",
+      "width": 640,
+      "height": 512
+    },
+    "training": {
+      "file": "training-v1.png",
+      "width": 640,
+      "height": 512
+    }
+  },
+  "frames": {
+    "residential.oak_a": {
+      "sheet": "residential",
+      "x": 48,
+      "y": 48,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ],
+      "source": {
+        "x": 34,
+        "y": 113,
+        "w": 279,
+        "h": 166
+      }
+    },
+    "residential.oak_b": {
+      "sheet": "residential",
+      "x": 208,
+      "y": 48,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ],
+      "source": {
+        "x": 339,
+        "y": 113,
+        "w": 279,
+        "h": 166
+      }
+    },
+    "residential.terracotta": {
+      "sheet": "residential",
+      "x": 368,
+      "y": 48,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ],
+      "source": {
+        "x": 634,
+        "y": 112,
+        "w": 283,
+        "h": 170
+      }
+    },
+    "residential.rug": {
+      "sheet": "residential",
+      "x": 528,
+      "y": 48,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ],
+      "source": {
+        "x": 943,
+        "y": 112,
+        "w": 280,
+        "h": 170
+      }
+    },
+    "residential.wall_left": {
+      "sheet": "residential",
+      "x": 64,
+      "y": 160,
+      "w": 32,
+      "h": 64,
+      "pivot": [
+        32,
+        48
+      ],
+      "source": {
+        "x": 58,
+        "y": 321,
+        "w": 198,
+        "h": 289
+      }
+    },
+    "residential.wall_right": {
+      "sheet": "residential",
+      "x": 224,
+      "y": 160,
+      "w": 32,
+      "h": 64,
+      "pivot": [
+        0,
+        48
+      ],
+      "source": {
+        "x": 388,
+        "y": 319,
+        "w": 197,
+        "h": 294
+      }
+    },
+    "residential.window_left": {
+      "sheet": "residential",
+      "x": 384,
+      "y": 160,
+      "w": 32,
+      "h": 64,
+      "pivot": [
+        32,
+        48
+      ],
+      "source": {
+        "x": 668,
+        "y": 321,
+        "w": 199,
+        "h": 290
+      }
+    },
+    "residential.door_panel": {
+      "sheet": "residential",
+      "x": 544,
+      "y": 160,
+      "w": 32,
+      "h": 64,
+      "pivot": [
+        0,
+        48
+      ],
+      "source": {
+        "x": 1002,
+        "y": 322,
+        "w": 197,
+        "h": 291
+      }
+    },
+    "residential.bed": {
+      "sheet": "residential",
+      "x": 16,
+      "y": 280,
+      "w": 128,
+      "h": 80,
+      "pivot": [
+        64,
+        48
+      ],
+      "source": {
+        "x": 43,
+        "y": 656,
+        "w": 290,
+        "h": 258
+      }
+    },
+    "residential.desk": {
+      "sheet": "residential",
+      "x": 201,
+      "y": 289,
+      "w": 77,
+      "h": 62,
+      "pivot": [
+        38,
+        43
+      ],
+      "source": {
+        "x": 376,
+        "y": 676,
+        "w": 238,
+        "h": 217
+      }
+    },
+    "residential.wardrobe": {
+      "sheet": "residential",
+      "x": 361,
+      "y": 279,
+      "w": 77,
+      "h": 81,
+      "pivot": [
+        38,
+        62
+      ],
+      "source": {
+        "x": 705,
+        "y": 621,
+        "w": 165,
+        "h": 286
+      }
+    },
+    "residential.box": {
+      "sheet": "residential",
+      "x": 537,
+      "y": 302,
+      "w": 45,
+      "h": 35,
+      "pivot": [
+        22,
+        24
+      ],
+      "source": {
+        "x": 1009,
+        "y": 714,
+        "w": 173,
+        "h": 172
+      }
+    },
+    "residential.plant": {
+      "sheet": "residential",
+      "x": 60,
+      "y": 415,
+      "w": 39,
+      "h": 65,
+      "pivot": [
+        19,
+        55
+      ],
+      "source": {
+        "x": 74,
+        "y": 939,
+        "w": 207,
+        "h": 240
+      }
+    },
+    "residential.chair": {
+      "sheet": "residential",
+      "x": 217,
+      "y": 419,
+      "w": 45,
+      "h": 58,
+      "pivot": [
+        22,
+        47
+      ],
+      "source": {
+        "x": 420,
+        "y": 945,
+        "w": 135,
+        "h": 234
+      }
+    },
+    "residential.fridge": {
+      "sheet": "residential",
+      "x": 373,
+      "y": 408,
+      "w": 54,
+      "h": 80,
+      "pivot": [
+        27,
+        66
+      ],
+      "source": {
+        "x": 692,
+        "y": 926,
+        "w": 147,
+        "h": 263
+      }
+    },
+    "residential.sofa": {
+      "sheet": "residential",
+      "x": 504,
+      "y": 409,
+      "w": 112,
+      "h": 78,
+      "pivot": [
+        56,
+        50
+      ],
+      "source": {
+        "x": 931,
+        "y": 949,
+        "w": 282,
+        "h": 249
+      }
+    },
+    "club.concrete_a": {
+      "sheet": "club",
+      "x": 48,
+      "y": 48,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ],
+      "source": {
+        "x": 23,
+        "y": 81,
+        "w": 278,
+        "h": 174
+      }
+    },
+    "club.concrete_b": {
+      "sheet": "club",
+      "x": 208,
+      "y": 48,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ],
+      "source": {
+        "x": 334,
+        "y": 82,
+        "w": 276,
+        "h": 173
+      }
+    },
+    "club.ceramic": {
+      "sheet": "club",
+      "x": 368,
+      "y": 48,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ],
+      "source": {
+        "x": 645,
+        "y": 81,
+        "w": 277,
+        "h": 174
+      }
+    },
+    "club.rug": {
+      "sheet": "club",
+      "x": 528,
+      "y": 48,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ],
+      "source": {
+        "x": 955,
+        "y": 77,
+        "w": 282,
+        "h": 178
+      }
+    },
+    "club.wall_left": {
+      "sheet": "club",
+      "x": 64,
+      "y": 160,
+      "w": 32,
+      "h": 64,
+      "pivot": [
+        32,
+        48
+      ],
+      "source": {
+        "x": 57,
+        "y": 299,
+        "w": 211,
+        "h": 313
+      }
+    },
+    "club.wall_right": {
+      "sheet": "club",
+      "x": 224,
+      "y": 160,
+      "w": 32,
+      "h": 64,
+      "pivot": [
+        0,
+        48
+      ],
+      "source": {
+        "x": 361,
+        "y": 299,
+        "w": 212,
+        "h": 316
+      }
+    },
+    "club.window_left": {
+      "sheet": "club",
+      "x": 384,
+      "y": 160,
+      "w": 32,
+      "h": 64,
+      "pivot": [
+        32,
+        48
+      ],
+      "source": {
+        "x": 667,
+        "y": 299,
+        "w": 223,
+        "h": 321
+      }
+    },
+    "club.door_panel": {
+      "sheet": "club",
+      "x": 544,
+      "y": 160,
+      "w": 32,
+      "h": 64,
+      "pivot": [
+        0,
+        48
+      ],
+      "source": {
+        "x": 987,
+        "y": 299,
+        "w": 219,
+        "h": 320
+      }
+    },
+    "club.desk": {
+      "sheet": "club",
+      "x": 12,
+      "y": 274,
+      "w": 135,
+      "h": 92,
+      "pivot": [
+        67,
+        58
+      ],
+      "source": {
+        "x": 39,
+        "y": 690,
+        "w": 328,
+        "h": 233
+      }
+    },
+    "club.cabinet": {
+      "sheet": "club",
+      "x": 201,
+      "y": 279,
+      "w": 77,
+      "h": 81,
+      "pivot": [
+        38,
+        62
+      ],
+      "source": {
+        "x": 439,
+        "y": 644,
+        "w": 135,
+        "h": 261
+      }
+    },
+    "club.door": {
+      "sheet": "club",
+      "x": 377,
+      "y": 287,
+      "w": 45,
+      "h": 65,
+      "pivot": [
+        22,
+        54
+      ],
+      "source": {
+        "x": 719,
+        "y": 634,
+        "w": 137,
+        "h": 276
+      }
+    },
+    "club.plant": {
+      "sheet": "club",
+      "x": 540,
+      "y": 287,
+      "w": 39,
+      "h": 65,
+      "pivot": [
+        19,
+        55
+      ],
+      "source": {
+        "x": 1005,
+        "y": 649,
+        "w": 183,
+        "h": 251
+      }
+    },
+    "club.chair": {
+      "sheet": "club",
+      "x": 57,
+      "y": 419,
+      "w": 45,
+      "h": 58,
+      "pivot": [
+        22,
+        47
+      ],
+      "source": {
+        "x": 75,
+        "y": 968,
+        "w": 148,
+        "h": 237
+      }
+    },
+    "club.tactics_board": {
+      "sheet": "club",
+      "x": 197,
+      "y": 411,
+      "w": 86,
+      "h": 74,
+      "pivot": [
+        43,
+        62
+      ],
+      "source": {
+        "x": 345,
+        "y": 941,
+        "w": 255,
+        "h": 271
+      }
+    },
+    "club.bookcase": {
+      "sheet": "club",
+      "x": 361,
+      "y": 406,
+      "w": 77,
+      "h": 83,
+      "pivot": [
+        38,
+        64
+      ],
+      "source": {
+        "x": 686,
+        "y": 935,
+        "w": 203,
+        "h": 288
+      }
+    },
+    "club.water_cooler": {
+      "sheet": "club",
+      "x": 541,
+      "y": 415,
+      "w": 38,
+      "h": 65,
+      "pivot": [
+        19,
+        55
+      ],
+      "source": {
+        "x": 1044,
+        "y": 935,
+        "w": 105,
+        "h": 280
+      }
+    },
+    "training.grass_a": {
+      "sheet": "training",
+      "x": 48,
+      "y": 48,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ],
+      "source": {
+        "x": 14,
+        "y": 109,
+        "w": 289,
+        "h": 159
+      }
+    },
+    "training.grass_b": {
+      "sheet": "training",
+      "x": 208,
+      "y": 48,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ],
+      "source": {
+        "x": 326,
+        "y": 109,
+        "w": 289,
+        "h": 159
+      }
+    },
+    "training.dirt": {
+      "sheet": "training",
+      "x": 368,
+      "y": 48,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ],
+      "source": {
+        "x": 640,
+        "y": 109,
+        "w": 288,
+        "h": 159
+      }
+    },
+    "training.concrete": {
+      "sheet": "training",
+      "x": 528,
+      "y": 48,
+      "w": 64,
+      "h": 32,
+      "pivot": [
+        32,
+        16
+      ],
+      "source": {
+        "x": 952,
+        "y": 109,
+        "w": 289,
+        "h": 159
+      }
+    },
+    "training.fence_right": {
+      "sheet": "training",
+      "x": 64,
+      "y": 164,
+      "w": 32,
+      "h": 56,
+      "pivot": [
+        0,
+        40
+      ],
+      "source": {
+        "x": 44,
+        "y": 341,
+        "w": 219,
+        "h": 257
+      }
+    },
+    "training.fence_left": {
+      "sheet": "training",
+      "x": 224,
+      "y": 164,
+      "w": 32,
+      "h": 56,
+      "pivot": [
+        32,
+        40
+      ],
+      "source": {
+        "x": 364,
+        "y": 341,
+        "w": 220,
+        "h": 257
+      }
+    },
+    "training.gate": {
+      "sheet": "training",
+      "x": 368,
+      "y": 156,
+      "w": 64,
+      "h": 72,
+      "pivot": [
+        32,
+        56
+      ],
+      "source": {
+        "x": 672,
+        "y": 341,
+        "w": 227,
+        "h": 253
+      }
+    },
+    "training.door_panel": {
+      "sheet": "training",
+      "x": 544,
+      "y": 160,
+      "w": 32,
+      "h": 64,
+      "pivot": [
+        0,
+        48
+      ],
+      "source": {
+        "x": 995,
+        "y": 324,
+        "w": 197,
+        "h": 274
+      }
+    },
+    "training.bench": {
+      "sheet": "training",
+      "x": 27,
+      "y": 287,
+      "w": 106,
+      "h": 65,
+      "pivot": [
+        53,
+        39
+      ],
+      "source": {
+        "x": 21,
+        "y": 701,
+        "w": 316,
+        "h": 193
+      }
+    },
+    "training.box": {
+      "sheet": "training",
+      "x": 217,
+      "y": 302,
+      "w": 45,
+      "h": 36,
+      "pivot": [
+        22,
+        25
+      ],
+      "source": {
+        "x": 412,
+        "y": 737,
+        "w": 179,
+        "h": 144
+      }
+    },
+    "training.goal": {
+      "sheet": "training",
+      "x": 344,
+      "y": 279,
+      "w": 112,
+      "h": 81,
+      "pivot": [
+        56,
+        65
+      ],
+      "source": {
+        "x": 656,
+        "y": 662,
+        "w": 294,
+        "h": 257
+      }
+    },
+    "training.door": {
+      "sheet": "training",
+      "x": 537,
+      "y": 287,
+      "w": 45,
+      "h": 65,
+      "pivot": [
+        22,
+        54
+      ],
+      "source": {
+        "x": 1017,
+        "y": 648,
+        "w": 172,
+        "h": 266
+      }
+    },
+    "training.cones": {
+      "sheet": "training",
+      "x": 61,
+      "y": 432,
+      "w": 38,
+      "h": 31,
+      "pivot": [
+        19,
+        23
+      ],
+      "source": {
+        "x": 61,
+        "y": 1015,
+        "w": 220,
+        "h": 195
+      }
+    },
+    "training.ball": {
+      "sheet": "training",
+      "x": 232,
+      "y": 440,
+      "w": 16,
+      "h": 16,
+      "pivot": [
+        8,
+        13
+      ],
+      "source": {
+        "x": 420,
+        "y": 1055,
+        "w": 100,
+        "h": 101
+      }
+    },
+    "training.bags": {
+      "sheet": "training",
+      "x": 372,
+      "y": 428,
+      "w": 56,
+      "h": 40,
+      "pivot": [
+        28,
+        30
+      ],
+      "source": {
+        "x": 663,
+        "y": 988,
+        "w": 248,
+        "h": 224
+      }
+    },
+    "training.flag": {
+      "sheet": "training",
+      "x": 547,
+      "y": 416,
+      "w": 26,
+      "h": 64,
+      "pivot": [
+        13,
+        60
+      ],
+      "source": {
+        "x": 1048,
+        "y": 959,
+        "w": 95,
+        "h": 242
+      }
+    }
+  }
+}

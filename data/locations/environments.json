@@ -1,0 +1,307 @@
+{
+  "apartment": {
+    "name": "Apartamento",
+    "subtitle": "Vila das Palmeiras · Seu lugar em Santa Aurora",
+    "floor": "a5845c",
+    "wall": "8fa394",
+    "spawn": [
+      4,
+      5
+    ],
+    "props": [
+      {
+        "id": "bed",
+        "cell": [
+          1,
+          2
+        ],
+        "size": [
+          1.6,
+          2.4
+        ],
+        "height": 15,
+        "color": "617f85",
+        "kind": "bed"
+      },
+      {
+        "id": "wardrobe",
+        "cell": [
+          4,
+          0
+        ],
+        "size": [
+          1.6,
+          0.8
+        ],
+        "height": 42,
+        "color": "8f6750",
+        "kind": "cabinet"
+      },
+      {
+        "id": "table",
+        "cell": [
+          7,
+          1
+        ],
+        "size": [
+          1.6,
+          0.8
+        ],
+        "height": 23,
+        "color": "ad7950",
+        "kind": "desk",
+        "label": "Mesa de trabalho",
+        "interaction": "desk"
+      },
+      {
+        "id": "box",
+        "cell": [
+          5,
+          3
+        ],
+        "size": [
+          0.7,
+          0.7
+        ],
+        "height": 12,
+        "color": "dba453",
+        "kind": "box",
+        "label": "Caixa de Antônio",
+        "interaction": "notebook"
+      },
+      {
+        "id": "plant",
+        "cell": [
+          0,
+          5
+        ],
+        "size": [
+          0.6,
+          0.6
+        ],
+        "height": 14,
+        "color": "aa6c49",
+        "kind": "plant"
+      },
+      {
+        "id": "exit",
+        "cell": [
+          8,
+          5
+        ],
+        "size": [
+          0.7,
+          0.7
+        ],
+        "height": 42,
+        "color": "405d57",
+        "kind": "door",
+        "label": "Sair para o clube",
+        "destination": "office"
+      }
+    ],
+    "npcs": []
+  },
+  "office": {
+    "name": "Diretoria",
+    "subtitle": "Aurora Atlético · Gente, decisões e bastidores",
+    "floor": "9caa9b",
+    "wall": "b6bba4",
+    "spawn": [
+      7,
+      5
+    ],
+    "props": [
+      {
+        "id": "meeting_table",
+        "cell": [
+          2,
+          2
+        ],
+        "size": [
+          2.6,
+          1.6
+        ],
+        "height": 23,
+        "color": "986b4f",
+        "kind": "desk",
+        "label": "Mesa de trabalho",
+        "interaction": "desk"
+      },
+      {
+        "id": "files",
+        "cell": [
+          6,
+          0
+        ],
+        "size": [
+          1.6,
+          0.8
+        ],
+        "height": 40,
+        "color": "62756e",
+        "kind": "cabinet"
+      },
+      {
+        "id": "plant",
+        "cell": [
+          0,
+          5
+        ],
+        "size": [
+          0.6,
+          0.6
+        ],
+        "height": 14,
+        "color": "aa6c49",
+        "kind": "plant"
+      },
+      {
+        "id": "home_door",
+        "cell": [
+          0,
+          6
+        ],
+        "size": [
+          0.7,
+          0.7
+        ],
+        "height": 38,
+        "color": "735f4e",
+        "kind": "door",
+        "label": "Voltar para casa",
+        "destination": "apartment"
+      },
+      {
+        "id": "ct_door",
+        "cell": [
+          8,
+          3
+        ],
+        "size": [
+          0.7,
+          0.7
+        ],
+        "height": 42,
+        "color": "315e47",
+        "kind": "door",
+        "label": "Entrar no CT",
+        "destination": "training"
+      }
+    ],
+    "npcs": [
+      {
+        "id": "helena",
+        "cell": [
+          4,
+          2
+        ],
+        "label": "Helena Duarte",
+        "interaction": "helena",
+        "shirt": "315d65",
+        "hair": "493b32"
+      }
+    ]
+  },
+  "training": {
+    "name": "Centro de treinamento",
+    "subtitle": "Elenco completo · Estações de treino e goleiros",
+    "floor": "577e4e",
+    "wall": "829b7c",
+    "spawn": [
+      12,
+      9
+    ],
+    "props": [
+      {
+        "id": "bench",
+        "cell": [
+          2,
+          0
+        ],
+        "size": [
+          3.6,
+          0.7
+        ],
+        "height": 45,
+        "color": "a78355",
+        "kind": "bench"
+      },
+      {
+        "id": "equipment",
+        "cell": [
+          0,
+          4
+        ],
+        "size": [
+          0.7,
+          0.7
+        ],
+        "height": 13,
+        "color": "baa06b",
+        "kind": "box"
+      },
+      {
+        "id": "goal",
+        "cell": [
+          13,
+          4
+        ],
+        "size": [
+          0.3,
+          2.2
+        ],
+        "height": 38,
+        "color": "eee8cd",
+        "kind": "goal"
+      },
+      {
+        "id": "office_door",
+        "cell": [
+          13,
+          9
+        ],
+        "size": [
+          0.6,
+          0.6
+        ],
+        "height": 16,
+        "color": "315e47",
+        "kind": "gate",
+        "label": "Entrar na diretoria",
+        "destination": "office"
+      },
+      {
+        "id": "goal_left",
+        "cell": [
+          1,
+          4
+        ],
+        "size": [
+          0.3,
+          2.2
+        ],
+        "height": 38,
+        "color": "eee8cd",
+        "kind": "goal"
+      }
+    ],
+    "npcs": [
+      {
+        "id": "davi",
+        "cell": [
+          6,
+          0
+        ],
+        "label": "Observar Davi",
+        "interaction": "davi",
+        "shirt": "d5ae58",
+        "hair": "38302a"
+      }
+    ],
+    "size": [
+      14,
+      10
+    ]
+  }
+}
