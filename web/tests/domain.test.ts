@@ -295,3 +295,27 @@ test('nome normalizado persiste em exportação e partida ativa; nomes inválido
  const g={...newGame(),managerName:'João Silva'},live=createMatch(g),s=memorySlots();createSlot(s,2,{...g,live});assert.deepEqual(listSlots(s)[2].game,{...g,live});
  for(const managerName of ['', ' a ', 'x'.repeat(33),'<\u0000>'])assert.throws(()=>validateSave({...g,managerName}));
 });
+
+import {broadcastFrame,lastShotReplay} from '../src/game/broadcast.ts';
+test('transmissão usa autor real, domínio vinculado e resultado registrado sem alterar simulação',()=>{
+ const g=newGame();let m=createMatch(g);while(m.minute<90&&!m.events.some(e=>e.minute===m.minute&&e.kind==='goal')){if(m.phase==='halftime')m=resumeMatch(m,g.club);m=advanceMatch(m,g.club,g.mentality);}
+ const before=JSON.stringify(m),shot=m.events.find(e=>e.minute===m.minute&&e.kind==='shot');assert.ok(shot);const frame=broadcastFrame(m,.5,g.formation,g.club,true);assert.equal(frame.shooter,shot.player);assert.equal(frame.carrier,shot.player);assert.deepEqual(frame.ball,frame.actors.find(a=>a.id===shot.player)!.point);
+ const end=broadcastFrame(m,1,g.formation,g.club,true);assert.equal(end.outcome,'goal');assert.ok(end.actors.some(a=>a.action==='celebrate'));assert.equal(JSON.stringify(m),before);
+});
+test('defesa intercepta antes da linha, expulsos ausentes e segundo tempo inverte campo',()=>{
+ const g=newGame();let m=createMatch(g);while(m.phase==='first'&&!m.events.some(e=>e.minute===m.minute&&e.kind==='save'))m=advanceMatch(m,g.club,g.mentality);
+ const frame=broadcastFrame(m,1,g.formation,g.club,true);assert.equal(frame.outcome,'save');assert.ok(frame.ball[0]>0&&frame.ball[0]<1);assert.ok(frame.actors.some(a=>a.id===frame.carrier));
+ const original=broadcastFrame(createMatch(g),0);const second=broadcastFrame({...createMatch(g),minute:46,phase:'second'},0);const keeper=original.actors.find(a=>a.keeper&&a.club===g.club)!;assert.equal(second.actors.find(a=>a.id===keeper.id)!.point[0],1-keeper.point[0]);
+ const sent=m.home.active[2];const reduced={...m,home:{...m.home,active:m.home.active.filter(id=>id!==sent),sentOff:[sent]}};assert.ok(!broadcastFrame(reduced,.5).actors.some(a=>a.id===sent));
+});
+test('replay reconstitui escalação após troca e não modifica o save nem o placar',()=>{
+ let g=newGame(),m=skipPeriod(createMatch(g),g.club,g.mentality);m=substitute(m,g.club,'d01','d05');m=resumeMatch(m,g.club);m=skipPeriod(m,g.club,g.mentality);g={...g,live:m};const raw=JSON.stringify(g),replay=lastShotReplay(g)!;assert.ok(replay.minute>45);assert.ok((replay.home.club===g.club?replay.home:replay.away).active.includes('d05'));assert.equal(JSON.stringify(g),raw);assert.equal(lastShotReplay(newGame()),null);
+ for(const progress of [0,.2,.5,.7,1]){const frame=broadcastFrame(replay,progress,g.formation,g.club,true);assert.ok([...frame.ball,...frame.actors.flatMap(a=>a.point)].every(Number.isFinite));assert.equal(new Set(frame.actors.map(a=>a.id)).size,frame.actors.length);}
+});
+
+import {shotReplay,replayClips} from '../src/game/broadcast.ts';
+test('galeria seleciona apenas finalizações existentes e reconstrói lances antigos sem trocar o placar atual',()=>{
+ let g=newGame(),m=skipPeriod(createMatch(g),g.club,g.mentality);m=substitute(m,g.club,'d01','d05');m=skipPeriod(resumeMatch(m,g.club),g.club,g.mentality);g={...g,live:m};const clips=replayClips(m);assert.ok(clips.length>2);assert.equal(new Set(clips.map(c=>c.minute)).size,clips.length);
+ const first=shotReplay(g,clips[0].minute)!;assert.ok(first.home.initial.includes('d01'));assert.ok(!first.home.active.includes('d05'));assert.equal(first.minute,clips[0].minute);assert.equal(shotReplay(g,-1),null);assert.equal(shotReplay(g,91),null);assert.equal(shotReplay(g,.5),null);assert.equal(shotReplay(newGame(),1),null);
+ const before=JSON.stringify(g);for(const clip of clips){const snapshot=shotReplay(g,clip.minute)!;assert.equal(snapshot.minute,clip.minute);assert.ok(snapshot.events.some(e=>e.kind==='shot'&&e.minute===clip.minute));assert.ok(['Gol','Defesa / corte','Finalização'].includes(clip.outcome));}assert.equal(JSON.stringify(g),before);
+});

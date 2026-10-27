@@ -5,6 +5,17 @@ cliques. Esta é a versão ativa do projeto, preparada para a **Vercel**.
 React + TypeScript + Vite nas telas; Canvas 2D original nos ambientes. Não precisa
 de Godot instalado, servidor próprio, banco, conta ou chave de API para jogar.
 
+## Transmissão de partidas — v0.7
+
+Passes, domínio, finalização, defesa e comemoração derivados dos eventos reais
+da simulação. Portador e finalizador identificados, câmera geral ou acompanhando
+a jogada, galeria de finalizações e replay com barra de tempo, pausa e ritmos de
+0,5×/1×/2×. Modo ampliado e placar do lance separados do placar atual. Placar, cartões,
+substituições e saves preservam as regras anteriores.
+
+Atlas procedural original de 16 efeitos: `npm run assets:match`.
+Guia e limites: [docs/BROADCAST.md](docs/BROADCAST.md).
+
 ## Tela inicial e carreiras — v0.6
 
 Ao abrir, escolha **Nova carreira** ou **Continuar carreira**. Defina seu nome,

@@ -29,3 +29,9 @@ test('varzea terrain uses 64x32 diamond footprints with transparent corners',()=
     for(let y=0;y<32;y++)for(let x=0;x<64;x++)if(Math.abs((x+.5-32)/32)+Math.abs((y+.5-16)/16)>1)assert.equal(png.data[((f.y+y)*png.width+f.x+x)*4+3],0);
   }
 });
+
+test('match effects atlas has sixteen transparent, nonempty, bounded original frames',()=>{
+ const manifest=JSON.parse(fs.readFileSync('web/src/football/match-effects-v1.json','utf8')),png=PNG.sync.read(fs.readFileSync('public/football/match-effects-v1.png'));
+ assert.equal(png.width,64);assert.equal(png.height,64);assert.equal(Object.keys(manifest.frames).length,16);
+ for(const f of Object.values(manifest.frames)){assert.deepEqual(f.pivot,[8,8]);let opaque=0;for(let y=0;y<f.h;y++)for(let x=0;x<f.w;x++)if(png.data[((f.y+y)*png.width+f.x+x)*4+3])opaque++;assert.ok(opaque>0&&opaque<256);assert.equal(png.data[(f.y*png.width+f.x)*4+3],0);}
+});

@@ -105,3 +105,12 @@ npm run test:e2e: duração em 1× com relógio controlado, pausa, aceleração 
 troca, reload no intervalo/segundo tempo, salto por período, confirmação de rodada,
 mobile e regressões de exploração/gestão/temporada. Capturas em artifacts/web:
 match-live.png, match-halftime.png, match-mobile.png e *-refined.png.
+
+
+## Transmissão v0.7
+
+A bola agora segue uma sequência de passe, recepção/condução e finalização
+associada ao autor do evento. Defesa termina antes da linha e gol na rede.
+A direção inverte após o intervalo; poses de ação e uniformes usam o atlas v2.
+Rever último lance reconstitui a escalação do minuto e pausa a partida. Câmera
+opcional acompanha a bola. Ver BROADCAST.md para funcionamento e limites.

@@ -125,3 +125,25 @@ mercado entre os clubes da liga continuam pendentes.
 
 Critérios e operação documentados em SAVES_UI.md. Conta online e sincronização
 entre dispositivos continuam fora deste incremento.
+
+
+## Transmissão v0.7
+
+- B7-01: Coreografia a partir dos eventos, bola vinculada a portador/finalizador — feito.
+- B7-02: Poses de chute, defesa, celebração e atlas original de efeitos — feito.
+- B7-03: Replay de seis segundos com reconstrução de escalação e relógio pausado — feito.
+- B7-04: Câmera geral/acompanhamento e controles legíveis em viewport mobile — feito.
+- B7-05: Testes de imutabilidade, continuidade, assets e replay — feito.
+
+Física da bola, animações próprias de reposições e replay de qualquer lance são
+incrementos futuros. Os próximos focos pedidos pelo usuário seguem sendo
+interações dos ambientes e UX mobile geral.
+
+
+### Polimento do replay
+
+- Galeria de finalizações já registradas e acesso pelo lance a lance: feito.
+- Barra de tempo, pausar/reproduzir/repetir e ritmos independentes: feito.
+- Contexto do lance, placar histórico e placar atual distintos: feito.
+- Modo ampliado com campo fixado durante rolagem mobile: feito.
+- Testes de reconstrução histórica e controles sem mutar a partida: feito.

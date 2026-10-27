@@ -8,9 +8,9 @@ Versões exatas das dependências em package-lock.json.
 
 | Verificação | Comando | Resultado |
 | --- | --- | --- |
-| Domínio, armazenamento e tilesets | npm test | 56 testes aprovados |
+| Domínio, armazenamento e tilesets | npm test | 61 testes aprovados |
 | TypeScript e produção | npm run build | Sem erros; dist gerado |
-| Navegador sobre produção | npm run test:e2e | 21 percursos aprovados (suíte + repetição focada da abertura) |
+| Navegador sobre produção | npm run test:e2e | 23 percursos aprovados; repetição focada do replay após polimento mobile |
 | HTTP do preview local | GET http://127.0.0.1:5173/ | 200 |
 | Layout desktop | Playwright, 1440×1000 | Captura inspecionada |
 | Layout mobile | Playwright, 390×844 | Captura inspecionada, sem overflow global |
@@ -18,6 +18,43 @@ Versões exatas das dependências em package-lock.json.
 O teste de navegador usa o build de produção e um servidor próprio na porta
 5274, com reuseExistingServer=false para não acessar outros projetos locais.
 O script test:e2e inclui o build antes de iniciar o Playwright.
+
+## Controles do replay — melhoria incremental
+
+Galeria de todas as finalizações da partida atual, atalhos no lance a lance,
+seleção anterior/próxima, pausa, barra de tempo e velocidades 0,5×/1×/2×.
+O contexto mostra autor, clube, resultado e placar no lance; o principal mantém
+placar atual. Modo ampliado remove informações secundárias; no celular o campo
+permanece visível durante a rolagem dos controles.
+
+Novo teste de lógica verifica seleção válida, rejeição de minutos inexistentes,
+escalação histórica anterior às trocas e estado atual intacto. Novo percurso
+Playwright testa pausa, deslocamento manual, reprodução a 0,5×, navegação entre
+lances, modo ampliado, viewport mobile e acesso pelo histórico. Os 23 percursos
+da suíte passaram; os dois do replay foram repetidos após o ajuste visual mobile.
+Capturas: replay-controls-desktop.png e replay-controls-mobile.png.
+
+Build: JavaScript 447,92 kB (137,56 kB gzip), CSS 65,92 kB (14,57 kB gzip).
+Sem alteração no formato do save ou na simulação de resultados. Ainda local.
+
+## Transmissão — v0.7 · 26/10/2026
+
+Três testes de domínio verificam finalizador/portador, gol/defesa, inversão de
+campo, expulsos, reconstrução com substituições e imutabilidade do save. Um teste
+de asset verifica 16 células RGBA não vazias, transparentes e com pivô consistente.
+O cenário de gol do teste foi corrigido para percorrer também o segundo tempo,
+pois a semente usada não marca no primeiro tempo.
+
+Novo teste de navegador: replay de finalização, câmera, relógio e placar
+preservados, mobile sem overflow, retorno à transmissão e encerramento da rodada.
+A suíte completa de 22 percursos passou. Depois dos ajustes finais de separação
+visual, pausa da câmera e legendas, os quatro percursos de partidas/replay foram
+executados novamente. Capturas: broadcast-replay.png e broadcast-mobile.png.
+
+Build: JavaScript 444,56 kB (136,57 kB gzip), CSS 63,77 kB (14,13 kB gzip).
+A simulação esportiva e o formato dos saves permanecem compatíveis. O replay
+é reconstituição de eventos, não gravação de trajetórias físicas. BROADCAST.md
+registra os limites. Este incremento não foi publicado na Vercel.
 
 ## Tela inicial, nome e saves — v0.6 · 26/10/2026
 

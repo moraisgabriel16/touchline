@@ -6,7 +6,7 @@ export class CharacterAtlas {
   private kits=new Map<string,CharacterAtlas>();
   constructor(private images:Record<string,HTMLImageElement|HTMLCanvasElement>){}
   /** Runtime kit palette: preserve the shared atlas cells, faces, feet and poses. */
-  drawKit(ctx:CanvasRenderingContext2D,character:'davi'|'keeper',point:Cell,direction:Direction,moving:boolean,step:number,shirt:string){
+  drawKit(ctx:CanvasRenderingContext2D,character:'davi'|'keeper',point:Cell,direction:Direction,moving:boolean,step:number,shirt:string,action=false){
     const key=character+shirt;
     if(!this.kits.has(key)){
       const canvas=document.createElement('canvas');canvas.width=256;canvas.height=256;
@@ -19,7 +19,7 @@ export class CharacterAtlas {
       }
       c.putImageData(pixels,0,0);this.kits.set(key,new CharacterAtlas({...this.images,[character]:canvas}));
     }
-    this.kits.get(key)!.draw(ctx,character,point,direction,moving,step);
+    this.kits.get(key)!.draw(ctx,character,point,direction,moving,step,false,action);
   }
   draw(ctx:CanvasRenderingContext2D,character:string,point:Cell,direction:Direction,moving=false,step=0,talking=false,action=false){
     const pose=action?'action':characterPose(moving,step,talking);

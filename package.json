@@ -17,7 +17,8 @@
     "assets:characters": "node tools/pack-characters-v2.mjs",
     "assets:training": "node tools/pack-training.mjs",
     "assets:characters:v2": "node tools/pack-characters-v2.mjs",
-    "assets:characters:legacy": "node tools/pack-characters.mjs"
+    "assets:characters:legacy": "node tools/pack-characters.mjs",
+    "assets:match": "node tools/generate-match-effects.mjs"
   },
   "dependencies": {
     "react": "19.3.1",
