@@ -271,3 +271,9 @@ esta versão responsiva não promete escala inteira em todas as janelas.
 Próximos incrementos em `docs/IMPLEMENTATION_PLAN.md`. O protótipo Godot e seus
 testes permanecem preservados como histórico; `Jogar-Godot.cmd` abre essa versão.
 As instruções antigas estão em `docs/GODOT_PROTOTYPE.md` e não descrevem o webapp.
+
+## v0.8 — uma rodada com propósito
+
+Em Ambientes, a agenda reúne preparação, vínculos e o próximo adversário. Ela prioriza devolutivas pendentes, informa suspensos e oferece atalhos para escalação e desenvolvimento. O pós-jogo mostra posição, pontos, condição, próximo confronto e recompensas disponíveis.
+
+Novas metas por temporada: cinco vitórias (+60 XP/R$ 2.500), vinte pontos (+80 XP/R$ 3.500) e concluir o calendário (+100 XP/R$ 2.000). Receba as metas antes de virar o ano. São opcionais e não exigem login diário. Saves existentes continuam compatíveis, sem reset.

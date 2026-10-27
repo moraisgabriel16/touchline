@@ -319,3 +319,23 @@ test('galeria seleciona apenas finalizações existentes e reconstrói lances an
  const first=shotReplay(g,clips[0].minute)!;assert.ok(first.home.initial.includes('d01'));assert.ok(!first.home.active.includes('d05'));assert.equal(first.minute,clips[0].minute);assert.equal(shotReplay(g,-1),null);assert.equal(shotReplay(g,91),null);assert.equal(shotReplay(g,.5),null);assert.equal(shotReplay(newGame(),1),null);
  const before=JSON.stringify(g);for(const clip of clips){const snapshot=shotReplay(g,clip.minute)!;assert.equal(snapshot.minute,clip.minute);assert.ok(snapshot.events.some(e=>e.kind==='shot'&&e.minute===clip.minute));assert.ok(['Gol','Defesa / corte','Finalização'].includes(clip.outcome));}assert.equal(JSON.stringify(g),before);
 });
+import {sessionBriefing} from '../src/game/session.ts';
+test('agenda preserva o save, identifica o adversário e prioriza compromissos',()=>{
+ let g=newGame();const before=JSON.stringify(g),b=sessionBriefing(g);
+ assert.equal(b.opponent,calendar(g)[0].find(p=>p.includes(g.club))!.find(id=>id!==g.club));
+ assert.equal(JSON.stringify(g),before);assert.equal(b.ended,false);
+ g=interactWithPlayer(g,'m04','listen');g=playRound(g);g=interactWithPlayer(g,'m04','promise');
+ assert.equal(sessionBriefing(g).contact.id,'m04');assert.equal(sessionBriefing(g).pending.length,1);
+ g=prepare(g,'train');g=interactWithPlayer(g,'m04','deliver');assert.equal(sessionBriefing(g).pending.length,0);
+ while(g.round<22)g=playRound(g);assert.equal(sessionBriefing(g).ended,true);assert.equal(sessionBriefing(g).opponent,undefined);
+});
+test('novos marcos sobrevivem ao save sem duplicação e renovam na temporada seguinte',()=>{
+ let g=newGame();assert.equal(claimObjective(g,'2027:finish_season'),g);
+ while(g.round<22)g=playRound(g);
+ const cash=g.cash,xp=g.campaign.xp;g=claimObjective(g,'2027:finish_season');
+ assert.equal(g.cash,cash+2000);assert.equal(g.campaign.xp,xp+100);
+ g=validateSave(JSON.parse(JSON.stringify(g)));assert.equal(claimObjective(g,'2027:finish_season'),g);
+ for(const id of ['five_wins','twenty_points']){const o=careerObjectives(g).find(o=>o.id===id)!;if(o.current===o.target){g=claimObjective(g,o.key);assert.equal(claimObjective(g,o.key),g);assert.deepEqual(validateSave(g),g);}}
+ g=nextSeason(g);const fresh=careerObjectives(g).find(o=>o.id==='finish_season')!;assert.equal(fresh.claimed,false);assert.equal(fresh.current,0);assert.equal(fresh.key,'2028:finish_season');
+ assert.deepEqual(validateSave(g),g);
+});

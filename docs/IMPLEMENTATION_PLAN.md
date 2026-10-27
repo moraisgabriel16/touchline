@@ -147,3 +147,14 @@ interações dos ambientes e UX mobile geral.
 - Contexto do lance, placar histórico e placar atual distintos: feito.
 - Modo ampliado com campo fixado durante rolagem mobile: feito.
 - Testes de reconstrução histórica e controles sem mutar a partida: feito.
+
+## v0.8 — agenda e continuidade
+
+- [x] Agenda derivada do save: próximo adversário, mando, classificação e suspensos.
+- [x] Preparação direta com custos/efeitos e limites existentes.
+- [x] Priorização de compromissos e acesso a desenvolvimento/escalação.
+- [x] Metas de cinco vitórias, vinte pontos e temporada completa; resgate único por ano.
+- [x] Pós-jogo contextual e guia atualizado.
+- [ ] Próximo: eventos de vestiário com escolhas e consequências persistentes (não implementado).
+
+Design e limites: `SESSION_LOOP.md`.

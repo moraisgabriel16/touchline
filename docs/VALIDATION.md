@@ -8,9 +8,9 @@ Versões exatas das dependências em package-lock.json.
 
 | Verificação | Comando | Resultado |
 | --- | --- | --- |
-| Domínio, armazenamento e tilesets | npm test | 61 testes aprovados |
+| Domínio, armazenamento e tilesets | npm test | 63 testes aprovados |
 | TypeScript e produção | npm run build | Sem erros; dist gerado |
-| Navegador sobre produção | npm run test:e2e | 23 percursos aprovados; repetição focada do replay após polimento mobile |
+| Navegador sobre produção | npm run test:e2e | 24 percursos aprovados (v0.8) |
 | HTTP do preview local | GET http://127.0.0.1:5173/ | 200 |
 | Layout desktop | Playwright, 1440×1000 | Captura inspecionada |
 | Layout mobile | Playwright, 390×844 | Captura inspecionada, sem overflow global |
@@ -236,3 +236,7 @@ A versão é single-player com save local por origem/navegador, sem sincronizaç
 entre abas ou dispositivos. Import/export permite migração manual.
 O protótipo Godot permanece preservado, mas suas verificações anteriores estão
 em GODOT_VALIDATION.md e não são validações do runtime web.
+
+## v0.8 — agenda e continuidade (27/10/2026)
+
+63 testes de domínio/assets e 24 percursos de navegador aprovados; build sem erros. Nova cobertura: briefing sem mutação, prioridade de promessa, resgate único e persistente dos marcos, renovação anual, preparação pela agenda e retomada após reload no celular. Capturas session-desktop.png e session-mobile.png em artifacts/web. Sem dependências novas.

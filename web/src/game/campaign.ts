@@ -63,6 +63,9 @@ export function seasonStats(g:Game){const games=g.results.filter(m=>m.home===g.c
 export function careerObjectives(g:Game){const stats=seasonStats(g);return [
   {id:'first_win',title:'A primeira vitória',description:'Vença uma partida da temporada.',current:Math.min(1,stats.wins),target:1,cash:1500,xp:30},
   {id:'ten_points',title:'Um projeto que pontua',description:'Some dez pontos na liga.',current:Math.min(10,stats.points),target:10,cash:3000,xp:60},
+  {id:'five_wins',title:'Uma equipe que acredita',description:'Conquiste cinco vitórias nesta temporada.',current:Math.min(5,stats.wins),target:5,cash:2500,xp:60},
+  {id:'twenty_points',title:'Campanha de respeito',description:'Some vinte pontos na liga.',current:Math.min(20,stats.points),target:20,cash:3500,xp:80},
+  {id:'finish_season',title:'Até o último apito',description:'Dispute todas as rodadas da temporada.',current:Math.min(schedule(g.leagueSize).length,g.round),target:schedule(g.leagueSize).length,cash:2000,xp:100},
   {id:'bonds',title:'Conheça o vestiário',description:'Ouça cinco atletas diferentes.',current:Math.min(5,Object.values(g.campaign.relations).filter(r=>r.heard).length),target:5,cash:0,xp:40},
   {id:'reliable',title:'Palavra cumprida',description:'Cumpra uma devolutiva de treino.',current:Math.min(1,Object.values(g.campaign.relations).filter(r=>r.fulfilled>0).length),target:1,cash:0,xp:40}
   ].map(o=>({...o,key:o.id==='bonds'||o.id==='reliable'?o.id:`${g.year}:${o.id}`,claimed:g.campaign.claimed.includes(o.id==='bonds'||o.id==='reliable'?o.id:`${g.year}:${o.id}`)}));}
@@ -88,7 +91,7 @@ export function validateCampaign(value:unknown,g:Game):Campaign{
   const obj=(v:unknown)=>!!v&&typeof v==='object'&&!Array.isArray(v);
   const str=(s:unknown,max:number)=>typeof s==='string'&&s.length<=max;
   const ids=allOwned(g).map(p=>p.id);
-  if(!integer(c.xp,0,1e7)||!Array.isArray(c.claimed)||c.claimed.length>16000||new Set(c.claimed).size!==c.claimed.length||c.claimed.some(k=>!str(k,40)||!(/^(bonds|reliable|\d{4}:(first_win|ten_points))$/).test(k))||!obj(c.relations)||!obj(c.records)||!Array.isArray(c.reports)||c.reports.length>22||!Array.isArray(c.seasons)||c.seasons.length>20)return fail();
+  if(!integer(c.xp,0,1e7)||!Array.isArray(c.claimed)||c.claimed.length>16000||new Set(c.claimed).size!==c.claimed.length||c.claimed.some(k=>!str(k,40)||!(/^(bonds|reliable|\d{4}:(first_win|ten_points|five_wins|twenty_points|finish_season))$/).test(k))||!obj(c.relations)||!obj(c.records)||!Array.isArray(c.reports)||c.reports.length>22||!Array.isArray(c.seasons)||c.seasons.length>20)return fail();
   for(const [id,r] of Object.entries(c.relations)){
     if(!ids.includes(id)||!obj(r)||![r.trust,r.respect,r.affinity,r.rivalry].every(n=>integer(n,0,100))||typeof r.heard!=='boolean'||typeof r.feedbackDone!=='boolean'||!integer(r.fulfilled,0,100000)||!integer(r.lastTalk,-1,turn(g))||!integer(r.lastPromise,-1,turn(g))||!str(r.reply,600)||!Array.isArray(r.memories)||r.memories.length>12)return fail();
     for(const m of r.memories)if(!obj(m)||!str(m.id,80)||!str(m.text,300)||!integer(m.year,2027,g.year)||!integer(m.round,1,22))return fail();
