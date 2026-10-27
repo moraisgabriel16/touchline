@@ -100,3 +100,28 @@ O protótipo Godot segue preservado, incluindo as cenas e testes. Referências:
 `GODOT_HYBRID_PLAN.md`, `LEGACY_IMPLEMENTATION_PLAN.md` e `GODOT_PROTOTYPE.md`.
 O GDD mantém sua função de visão/universo; decisões de plataforma e input seguem
 os pedidos mais recentes. Não tratar os sistemas futuros do GDD como prontos.
+
+## Gestão esportiva v0.5 — 26/10/2026
+
+| Issue | Dependência | Aceite | Estado |
+| --- | --- | --- | --- |
+| G5-01 Mercado de agentes livres | Elenco, caixa | Comprar/vender por clique; sem duplicação; CT e partida usam posse atual | Feito |
+| G5-02 Folha e planejamento | G5-01 | Custo recorrente e despesas pendentes visíveis e persistentes | Feito |
+| G5-03 Desenvolvimento individual | Treino, partida, relações | Participação e treino geram progresso limitado por potencial | Feito |
+| G5-04 Legado esportivo | Liga, carreira | Prêmio único ao fim da temporada e títulos visíveis | Feito |
+| G5-05 Testes e guia | G5-01–04 | Fluxo integrado, validação de save e regras documentadas | Feito |
+
+Regras e prioridades seguintes em MANAGER_DESIGN.md. Contratos com vencimento e
+mercado entre os clubes da liga continuam pendentes.
+
+
+## Entrada e persistência v0.6 — 26/10/2026
+
+- UI6-01 · Tela inicial responsiva, continuar/nova carreira e arte do CT: feito.
+- UI6-02 · Nome validado e escolha de clube antes de iniciar: feito.
+- UI6-03 · Três slots, migração do save antigo, autosave e salvar agora: feito.
+- UI6-04 · Import/export, confirmação para liberar e cópia restaurável: feito.
+- UI6-05 · Perfil e navegação compactos, testes de continuidade: feito.
+
+Critérios e operação documentados em SAVES_UI.md. Conta online e sincronização
+entre dispositivos continuam fora deste incremento.

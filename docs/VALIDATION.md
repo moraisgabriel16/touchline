@@ -8,9 +8,9 @@ Versões exatas das dependências em package-lock.json.
 
 | Verificação | Comando | Resultado |
 | --- | --- | --- |
-| Domínio, armazenamento e tilesets | npm test | 44 testes aprovados |
+| Domínio, armazenamento e tilesets | npm test | 56 testes aprovados |
 | TypeScript e produção | npm run build | Sem erros; dist gerado |
-| Navegador sobre produção | npm run test:e2e | 17 testes aprovados |
+| Navegador sobre produção | npm run test:e2e | 21 percursos aprovados (suíte + repetição focada da abertura) |
 | HTTP do preview local | GET http://127.0.0.1:5173/ | 200 |
 | Layout desktop | Playwright, 1440×1000 | Captura inspecionada |
 | Layout mobile | Playwright, 390×844 | Captura inspecionada, sem overflow global |
@@ -18,6 +18,45 @@ Versões exatas das dependências em package-lock.json.
 O teste de navegador usa o build de produção e um servidor próprio na porta
 5274, com reuseExistingServer=false para não acessar outros projetos locais.
 O script test:e2e inclui o build antes de iniciar o Playwright.
+
+## Tela inicial, nome e saves — v0.6 · 26/10/2026
+
+Quatro testes de domínio novos cobrem slots independentes, nome validado,
+compatibilidade com save antigo, backup/restauração, falha de quota antes da
+remoção, corrupção isolada e preservação da partida ativa.
+
+Três percursos novos de navegador cobrem criação de duas carreiras, troca de
+slots/reload, migração com nome sem perder rodadas, liberação cancelada e
+confirmada, restauração, importação inválida e retomada de partida importada.
+Os 18 percursos anteriores passaram com fixture de sessão já ativa; a abertura
+é testada sem essa fixture. Uma asserção nova diferia apenas em maiúsculas;
+foi corrigida para correspondência sem distinção de caixa e os três percursos
+de abertura foram executados novamente com sucesso.
+
+Capturas inspecionadas: start-desktop.png, start-mobile.png, start-create.png e
+start-saves.png em artifacts/web. Sem overflow global no celular. Menu lateral
+mais compacto e campo isométrico inteiro enquadrado na abertura.
+
+O build TypeScript/Vite passou. Preview local HTTP 200. Regras de armazenamento,
+recuperação e limites em SAVES_UI.md. Não houve deploy deste incremento.
+
+## Gestão esportiva — 26/10/2026
+
+Oito testes de domínio adicionados: compra e salário, integração na partida,
+rejeição de duplicação/janela fechada, venda com histórico, mínimo de elenco e
+goleiros, promessa pendente, quitação de despesas, evolução limitada por potencial,
+importação de saves antigos/adulterados e prêmio único de temporada.
+
+Novo percurso de navegador: cancelar e confirmar compra → CT com contratado →
+conversa → foco de desenvolvimento → venda → reload → persistência, desktop e
+mobile sem overflow. Capturas: manager-desktop.png, manager-mobile.png e
+manager-talent.png em artifacts/web. Revisão visual corrigiu o contraste da aba
+ativa e adicionou rolagem ao menu desktop para manter acesso às opções de save.
+
+Build final: JavaScript 422,34 kB (129,75 kB gzip), CSS 53,85 kB (12,06 kB gzip).
+Regras e limites em MANAGER_DESIGN.md. O mercado usa agentes livres fixos e
+compradores externos simulados; contratos com duração e negociação entre os
+clubes da liga não foram implementados. Não houve deploy deste incremento.
 
 ## Carreira e polimento — 25/10/2026
 

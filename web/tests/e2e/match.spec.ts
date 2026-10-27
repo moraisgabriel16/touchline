@@ -1,4 +1,4 @@
-import {test,expect} from '@playwright/test';
+import {test,expect} from './game-session.ts';
 
 test('partida dura 30s por tempo, pausa no intervalo e aceita troca persistente',async({page})=>{
   test.setTimeout(90_000);

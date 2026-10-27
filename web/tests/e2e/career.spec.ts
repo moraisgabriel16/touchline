@@ -1,4 +1,4 @@
-import {test,expect} from '@playwright/test';
+import {test,expect} from './game-session.ts';
 import type {Page} from '@playwright/test';
 const nav=(p:Page,name:string)=>p.getByRole('navigation').getByRole('button',{name,exact:true}).click();
 async function finish(p:Page){await p.getByRole('button',{name:'Jogar próxima rodada',exact:true}).click();await p.getByRole('button',{name:'Pular para o intervalo',exact:true}).click();await p.getByRole('button',{name:'Começar segundo tempo',exact:true}).click();await p.getByRole('button',{name:'Pular para o apito final',exact:true}).click();await p.getByRole('button',{name:'Encerrar partida e atualizar rodada',exact:true}).click();await p.getByRole('button',{name:'Continuar',exact:true}).click();}

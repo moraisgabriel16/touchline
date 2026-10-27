@@ -1,7 +1,8 @@
+import {currentRoster,allOwned} from './management.ts';
 import dialogue from '../../../data/social/conversations.json' with {type:'json'};
 import type {Game} from './domain.ts';
 import type {LiveMatch} from './live-match.ts';
-import {clubs,squadFor,schedule} from './data.ts';
+import {clubs,schedule} from './data.ts';
 
 export interface Memory {id:string;year:number;round:number;text:string}
 export interface Relationship {trust:number;respect:number;affinity:number;rivalry:number;heard:boolean;feedbackDone:boolean;fulfilled:number;lastTalk:number;lastPromise:number;reply:string;memories:Memory[];promise?:{year:number;round:number;status:'active'|'fulfilled'|'broken'|'repairing'}}
@@ -13,7 +14,7 @@ export const newCampaign=():Campaign=>({xp:0,claimed:[],relations:{},records:{},
 export type SocialAction=keyof typeof dialogue.actions;
 export const socialActions=dialogue.actions;
 const turn=(g:Game)=>g.year*100+g.round;
-const squad=(g:Game)=>[...squadFor(g.club),...g.recruits];
+const squad=currentRoster;
 const clamp=(n:number)=>Math.max(0,Math.min(100,n));
 export function personality(id:string){const hash=[...id].reduce((n,c)=>(n*31+c.charCodeAt(0))>>>0,7);return {trait:dialogue.traits[hash%4],priority:id==='m04'?'desenvolvimento':dialogue.priorities[(hash>>>3)%4]};}
 export function relationship(g:Game,id:string):Relationship{return g.campaign.relations[id]??{trust:50,respect:50,affinity:30,rivalry:0,heard:false,feedbackDone:false,fulfilled:0,lastTalk:-1,lastPromise:-1,reply:'Ainda não conversamos. Vamos nos conhecer no CT?',memories:[]};}
@@ -86,7 +87,7 @@ export function validateCampaign(value:unknown,g:Game):Campaign{
   const integer=(n:unknown,min:number,max:number)=>Number.isSafeInteger(n)&&Number(n)>=min&&Number(n)<=max;
   const obj=(v:unknown)=>!!v&&typeof v==='object'&&!Array.isArray(v);
   const str=(s:unknown,max:number)=>typeof s==='string'&&s.length<=max;
-  const ids=squad(g).map(p=>p.id);
+  const ids=allOwned(g).map(p=>p.id);
   if(!integer(c.xp,0,1e7)||!Array.isArray(c.claimed)||c.claimed.length>16000||new Set(c.claimed).size!==c.claimed.length||c.claimed.some(k=>!str(k,40)||!(/^(bonds|reliable|\d{4}:(first_win|ten_points))$/).test(k))||!obj(c.relations)||!obj(c.records)||!Array.isArray(c.reports)||c.reports.length>22||!Array.isArray(c.seasons)||c.seasons.length>20)return fail();
   for(const [id,r] of Object.entries(c.relations)){
     if(!ids.includes(id)||!obj(r)||![r.trust,r.respect,r.affinity,r.rivalry].every(n=>integer(n,0,100))||typeof r.heard!=='boolean'||typeof r.feedbackDone!=='boolean'||!integer(r.fulfilled,0,100000)||!integer(r.lastTalk,-1,turn(g))||!integer(r.lastPromise,-1,turn(g))||!str(r.reply,600)||!Array.isArray(r.memories)||r.memories.length>12)return fail();

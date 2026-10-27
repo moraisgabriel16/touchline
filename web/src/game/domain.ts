@@ -1,3 +1,5 @@
+import {currentRoster,payroll,management,settleDevelopment,validateManagement} from './management.ts';
+import type {Management} from './management.ts';
 import {newCampaign,settleCampaign,validateCampaign} from './campaign.ts';
 import type {Campaign} from './campaign.ts';
 import { createMatch, skipPeriod, resumeMatch, validateLive, updatedDiscipline } from './live-match.ts';
@@ -9,7 +11,7 @@ import { walkable } from './navigation.ts';
 export interface Hero { location: Location; positions: Partial<Record<Location,Cell>>; actions: Action[]; sceneVersion?:2|3 }
 export interface Match { round: number; home: number; away: number; hg: number; ag: number }
 export interface Game {
-  live?:LiveMatch; discipline?:Record<string,Discipline>;
+  managerName?:string; management?:Management; live?:LiveMatch; discipline?:Record<string,Discipline>;
   schema: 4; campaign:Campaign; seed: number; lineup: string[]; formation: typeof formations[number];
   mentality: typeof mentalities[number]; round: number; results: Match[]; hero: Hero;
   club: number; leagueSize: 4|12; year: number; cash: number; support: number; fitness: number;
@@ -18,7 +20,7 @@ export interface Game {
 }
 export interface Entry { round:number; label:string; amount:number }
 export type Preparation='train'|'rest'|'fans'|'scout';
-export const roster = (game:Game):Player[]=>[...squadFor(game.club),...game.recruits];
+export const roster = currentRoster;
 export const playerById = (id:string,game?:Game)=> (game?roster(game):players).find(player=>player.id===id)!;
 export const calendar = (game:Game)=>schedule(game.leagueSize);
 export const newGame = (club=0): Game => ({schema:4,campaign:newCampaign(),seed:2027,lineup:squadFor(club).slice(0,11).map(p=>p.id),formation:'4-4-2',mentality:'Equilibrada',round:0,results:[],hero:{location:'apartment',positions:{},actions:[],sceneVersion:3},club,leagueSize:12,year:2027,cash:18000,support:45,fitness:94,training:0,preparation:[],stadium:0,academy:0,ticket:20,kit:'home',recruits:[],ledger:[]});
@@ -36,7 +38,9 @@ export function preparationError(game:Game,action:Preparation):string {
   if(action==='train'&&game.fitness<55)return 'Condição abaixo de 55. Recupere a equipe antes de treinar.';
   if(action==='fans'&&game.cash<1000)return 'É preciso ter R$ 1.000 no caixa.';
   if(action==='scout'&&game.cash<1500)return 'É preciso ter R$ 1.500 no caixa.';
-  if(action==='scout'&&game.recruits.length>=6)return 'Limite de seis contratações da várzea atingido.';
+  if(action==='scout'&&(game.recruits.length>=6||roster(game).length>=24))return 'Limite de contratações ou de 24 atletas atingido.';
+  if(action==='scout'&&squadFor(game.club)[11+game.recruits.length]?.position==='GOL'&&roster(game).filter(p=>p.position==='GOL').length>=3)return 'Limite de três goleiros no CT.';
+  if(action==='scout'&&management(game).debt)return 'Quite as despesas pendentes antes de contratar.';
   return '';
 }
 export function prepare(game:Game,action:Preparation):Game {
@@ -125,7 +129,13 @@ export function playRound(game: Game, completed?:LiveMatch): Game {
   const win=own.home===game.club?own.hg>own.ag:own.ag>own.hg;
   const draw=own.hg===own.ag;
   next=book(next,'Cota da rodada',2500);
-  next=book(next,'Operação e salários',-Math.min(next.cash,4500));
+  const due=900+payroll(game)+management(game).debt,paid=Math.min(next.cash,due);
+  next=book(next,'Operação e salários',-paid);
+  next={...next,management:{...settleDevelopment(game,live),debt:due-paid}};
+  if(game.round+1===calendar(game).length){
+    const position=standings({...game,results:[...game.results,...results]}).findIndex(r=>r.club===game.club)+1;
+    next=book(next,`Premiação da liga: ${position}º lugar`,position===1?30000:position===2?15000:position<=4?8000:3000);
+  }
   const {live: _live,...career}=next;
   return {...career,campaign:settleCampaign(game,live),discipline:updatedDiscipline(game,live),round:game.round+1,results:[...game.results,...results],preparation:[],training:0,fitness:Math.max(40,game.fitness-5),support:Math.min(100,Math.max(10,game.support+(win?3:draw?0:-2)))};
 }
@@ -154,6 +164,8 @@ export function validateSave(value: unknown): Game {
   if(g.training!==(g.preparation.includes('train')?3+g.academy:0))return fail();
   if(!Array.isArray(g.recruits)||g.recruits.length>6)return fail();
   for(const [index,p] of g.recruits.entries())if(!p||p.id!==`recruit_${g.club}_${index}`||typeof p.name!=='string'||p.name.length>60||!players.some(base=>base.position===p.position)||!Number.isInteger(p.age)||p.age<16||p.age>45||!Number.isInteger(p.skill)||p.skill<1||p.skill>100||p.condition!==100)return fail();
+  if(g.managerName!==undefined&&(typeof g.managerName!=='string'||g.managerName.length<2||g.managerName.length>32||g.managerName!==g.managerName.trim().replace(/\s+/g,' ')||/[\u0000-\u001f\u007f]/.test(g.managerName)))return fail();
+  const management=validateManagement(g);
   if(!Array.isArray(g.ledger)||g.ledger.length>80||g.ledger.some(e=>!e||!Number.isInteger(e.round)||e.round<1||e.round>calendar(g).length||typeof e.label!=='string'||e.label.length>100||!Number.isSafeInteger(e.amount)||Math.abs(e.amount)>1e8))return fail();
   if (!Array.isArray(g.lineup) || g.lineup.length!==11 || new Set(g.lineup).size!==11 || g.lineup.some(id=>!roster(g).some(p=>p.id===id))) return fail();
   const perRound=g.leagueSize/2;
@@ -183,7 +195,7 @@ export function validateSave(value: unknown): Game {
   const campaign=validateCampaign(g.campaign,g);
   const live=g.live===undefined?undefined:validateLive(g.live,g);
   // Reconstruct known fields so extra properties never enter application state.
-  return {...(live?{live}:{}),...(g.discipline?{discipline:structuredClone(g.discipline)}:{}),schema:4,campaign,club:g.club,leagueSize:g.leagueSize,year:g.year,cash:g.cash,support:g.support,fitness:g.fitness,training:g.training,preparation:[...g.preparation],stadium:g.stadium,academy:g.academy,ticket:g.ticket,kit:g.kit,recruits:g.recruits.map(p=>({id:p.id,name:p.name,position:p.position,age:p.age,skill:p.skill,condition:p.condition})),ledger:g.ledger.map(e=>({round:e.round,label:e.label,amount:e.amount})),seed:g.seed,lineup:[...g.lineup],formation:g.formation,mentality:g.mentality,round:g.round,results:g.results.map(m=>({round:m.round,home:m.home,away:m.away,hg:m.hg,ag:m.ag})),hero:{location:g.hero.location,actions:[...g.hero.actions],sceneVersion:3,positions:Object.fromEntries(Object.entries(positions).map(([id,cell])=>[id,[...cell]]))}};
+  return {...(live?{live}:{}),...(g.discipline?{discipline:structuredClone(g.discipline)}:{}),schema:4,campaign,...(g.managerName?{managerName:g.managerName}:{}),...(management?{management}:{}),club:g.club,leagueSize:g.leagueSize,year:g.year,cash:g.cash,support:g.support,fitness:g.fitness,training:g.training,preparation:[...g.preparation],stadium:g.stadium,academy:g.academy,ticket:g.ticket,kit:g.kit,recruits:g.recruits.map(p=>({id:p.id,name:p.name,position:p.position,age:p.age,skill:p.skill,condition:p.condition})),ledger:g.ledger.map(e=>({round:e.round,label:e.label,amount:e.amount})),seed:g.seed,lineup:[...g.lineup],formation:g.formation,mentality:g.mentality,round:g.round,results:g.results.map(m=>({round:m.round,home:m.home,away:m.away,hg:m.hg,ag:m.ag})),hero:{location:g.hero.location,actions:[...g.hero.actions],sceneVersion:3,positions:Object.fromEntries(Object.entries(positions).map(([id,cell])=>[id,[...cell]]))}};
 }
 
 export function travel(game: Game, location: Location): Game {

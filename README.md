@@ -5,6 +5,29 @@ cliques. Esta é a versão ativa do projeto, preparada para a **Vercel**.
 React + TypeScript + Vite nas telas; Canvas 2D original nos ambientes. Não precisa
 de Godot instalado, servidor próprio, banco, conta ou chave de API para jogar.
 
+## Tela inicial e carreiras — v0.6
+
+Ao abrir, escolha **Nova carreira** ou **Continuar carreira**. Defina seu nome,
+um dos 12 clubes e um dos três slots independentes. **Minhas carreiras** permite
+carregar, exportar, importar em slot vazio, liberar e restaurar a última cópia.
+O save anterior permanece no slot 1, com nome escolhido ao continuar.
+
+Durante o jogo, use **Salvar agora** ou **Menu inicial**. O autosave continua
+ativo. Recarregar a aba retoma a sessão; voltar pelo menu permite trocar de
+carreira. Tudo é local ao navegador, sem conta online.
+
+Regras e recuperação: [docs/SAVES_UI.md](docs/SAVES_UI.md).
+
+## Gestão esportiva — v0.5
+
+Abra **Diretoria esportiva**: mercado de agentes livres com compra/venda,
+folha por atleta, previsão de caixa, janelas, relatório do próximo adversário,
+foco de desenvolvimento, premiação da liga e galeria de títulos.
+Os reforços entram no CT, nas conversas e na escalação. Força desenvolvida é
+usada nas partidas seguintes. Saves antigos continuam compatíveis.
+
+Design, regras, limites e próximos incrementos: [docs/MANAGER_DESIGN.md](docs/MANAGER_DESIGN.md).
+
 ## Pacote de carreira e polimento — v0.4
 
 - Minha carreira: metas, recompensas únicas, forma recente, confiança da diretoria,
@@ -21,7 +44,7 @@ de Godot instalado, servidor próprio, banco, conta ou chave de API para jogar.
   à migração é preservada quando há espaço no armazenamento do navegador.
 
 Abra **Minha carreira** para começar. Regras em `docs/CAREER_RELEASE_V04.md`.
-Esta é uma alpha jogável; mercado, contratos, demissões e carreiras em outros
+Esta é uma alpha jogável; transferências entre clubes da liga, contratos, demissões e carreiras em outros
 clubes continuam como próximas entregas.
 
 ## Pixel art e tilesets
@@ -227,7 +250,7 @@ Arte, diálogos e animações são provisórios. NPCs são estáticos. Não há 
 multiplayer, mercado entre clubes, contratos individuais, lesões, envelhecimento,
 agenda com relógio simulado ou viagem com custo/duração. Também não há acréscimos,
 prorrogação, disputa de pênaltis ou física completa de bola. A economia é simplificada,
-sem dívida, com condição coletiva e limite de seis recrutamentos por carreira.
+com despesas pendentes sem juros, condição coletiva e seis recrutamentos da várzea por carreira. O mercado possui 18 agentes livres fixos, sem recompra; não é uma simulação de transferências entre os clubes da liga.
 As quatro arquiteturas e paletas de torcida são compartilhadas entre os 12 clubes. Portas mudam de
 local após aproximação, ainda sem fade. A versão web usa rotas em grade por BFS,
 com bloqueio de móveis e sem cortar cantos; não depende de uma física nativa.

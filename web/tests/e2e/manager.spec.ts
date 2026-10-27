@@ -1,0 +1,14 @@
+import {test,expect} from './game-session.ts';
+test('diretoria conecta compra, CT, venda, foco de treino e save',async({page})=>{
+ const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));await page.goto('/');
+ const nav=async(name:string)=>page.getByRole('navigation').getByRole('button',{name,exact:true}).click();
+ await nav('Diretoria esportiva');await page.getByRole('button',{name:'Negociar contratação · Breno Pacheco',exact:true}).click();await expect(page.getByRole('dialog')).toContainText('Salário');await page.getByRole('button',{name:'Cancelar negociação',exact:true}).click();
+ await page.getByRole('button',{name:'Negociar contratação · Breno Pacheco',exact:true}).click();await page.getByRole('button',{name:'Confirmar contratação',exact:true}).click();await expect(page.locator('.manager-summary')).toContainText('19 / 24');
+ await nav('Ambientes');await page.getByRole('button',{name:'CT',exact:true}).click();await expect(page.locator('.training-roster-list')).toContainText('Breno Pacheco');
+ await nav('Elenco');await page.getByRole('searchbox').fill('Breno');await page.getByRole('button',{name:'Breno Pacheco',exact:true}).click();await page.getByRole('button',{name:'Ouvir o atleta',exact:false}).click();await expect(page.getByRole('dialog')).toContainText('Prioridade:');await page.getByRole('button',{name:'Fechar janela',exact:true}).click();
+ await nav('Diretoria esportiva');await page.getByRole('button',{name:'Lapidar talento',exact:true}).click();await page.getByLabel('Atleta em desenvolvimento',{exact:true}).selectOption('m04');await expect(page.locator('.talent-card')).toContainText('Davi Nascimento');
+ await page.getByRole('button',{name:'Negociar saídas',exact:true}).click();await page.getByRole('button',{name:'Revisar venda · Breno Pacheco',exact:true}).click();await page.getByRole('button',{name:'Confirmar venda',exact:true}).click();await expect(page.locator('.manager-summary')).toContainText('18 / 24');
+ await page.waitForTimeout(350);await page.reload();await nav('Diretoria esportiva');await expect(page.locator('.manager-log')).toContainText('Saiu Breno Pacheco');await page.getByRole('button',{name:'Lapidar talento',exact:true}).click();await expect(page.getByLabel('Atleta em desenvolvimento',{exact:true})).toHaveValue('m04');
+ await page.screenshot({path:'artifacts/web/manager-talent.png',fullPage:true});await page.getByRole('button',{name:'Buscar reforços',exact:true}).click();await expect(page.getByRole('button',{name:'Negociar contratação · Breno Pacheco',exact:true})).toHaveCount(0);
+ await page.screenshot({path:'artifacts/web/manager-desktop.png',fullPage:true});await page.setViewportSize({width:390,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:'artifacts/web/manager-mobile.png',fullPage:true});expect(errors).toEqual([]);
+});

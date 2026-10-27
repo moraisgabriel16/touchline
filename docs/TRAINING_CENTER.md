@@ -41,3 +41,9 @@ O navegador verifica carregamento, animação, movimento reduzido, mobile,
 contratações, Davi e saída. Capturas em artifacts/web: training-all-24.png,
 training-roster-24.png, training-scene-v2.png (nome histórico, cena atual) e
 training-upgraded-mobile.png.
+
+
+Na v0.5, mercado e várzea compartilham o limite de 24 atletas e três goleiros.
+Contratados aparecem imediatamente; vendidos deixam a cena. Em Diretoria
+esportiva, Lapidar talento define quem acumula progresso quando a rodada é
+encerrada. O movimento do cenário não concede progresso por tempo de espera.

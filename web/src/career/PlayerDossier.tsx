@@ -1,3 +1,4 @@
+import {allOwned,potential,management,wage} from '../game/management.ts';
 import {useState} from 'react';
 import type {Game} from '../game/domain.ts';
 import {roster} from '../game/domain.ts';
@@ -12,6 +13,7 @@ export function PlayerDossier({game,id,onAction,onTactics}:{game:Game;id:string;
   return <div className="player-dossier">
     <div className="dossier-identity"><div className={`dossier-avatar ${player.position==='GOL'?'keeper':''}`}/><div><span className="eyebrow">{player.position} · {player.age} ANOS · {game.lineup.includes(id)?'TITULAR':'RESERVA'}</span><strong>{profile.trait}</strong><p>Prioridade: {r.heard?profile.priority:'a descobrir na conversa'}</p></div></div>
     <div className="dossier-record"><span><b>{player.skill}</b>Força</span><span><b>{record?.apps??0}</b>Jogos registrados</span><span><b>{record?.goals??0}</b>Gols registrados</span><span><b>{game.discipline?.[id]?.ban?'Suspenso':game.fitness+'%'}</b>Disponibilidade</span></div>
+    <p className="dossier-help">Potencial de força: {potential(allOwned(game).find(p=>p.id===id)!)} · Evolução acumulada: {management(game).growth[id]??0} pontos · Salário: R$ {wage(player)} / rodada. Defina o foco na Diretoria esportiva.</p>
     <div className="relationship-grid">{([['Confiança','trust'],['Respeito','respect'],['Afinidade','affinity'],['Rivalidade','rivalry']] as const).map(([label,key])=><div key={key}><span>{label}</span><strong>{relationLabel(r[key],key)}</strong><div className={`relation-track ${key}`}><i style={{width:`${r[key]}%`}}/></div></div>)}</div>
     {r.promise&&<div className={`promise-note ${r.promise.status}`}><b>{r.promise.status==='active'?'Compromisso pendente':r.promise.status==='fulfilled'?'Palavra cumprida':r.promise.status==='broken'?'Compromisso quebrado':'Reconstruindo a confiança'}</b><span>Devolutiva do treino · rodada {r.promise.round}/{r.promise.year}{r.promise.status==='active'?' · antes de jogar':''}</span></div>}
     <blockquote className="athlete-reply">“{greeting?`Bom te ver por aqui. ${r.heard?'Seguimos trabalhando juntos.':'Quando tiver um momento, vamos conversar.'}`:r.reply}”</blockquote>

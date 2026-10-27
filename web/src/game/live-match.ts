@@ -1,3 +1,4 @@
+import {currentRoster} from './management.ts';
 import { clubs, squadFor, schedule } from './data.ts';
 import type { Player } from './data.ts';
 import type { Game } from './domain.ts';
@@ -9,7 +10,7 @@ export interface Discipline { yellows:number; ban:number }
 export interface MatchTeam { club:number; players:Player[]; initial:string[]; active:string[]; used:string[]; sentOff:string[]; yellow:Record<string,number>; goals:number; shots:number; fouls:number; corners:number; bonus:number }
 export interface LiveMatch { round:number; home:MatchTeam; away:MatchTeam; minute:number; phase:MatchPhase; events:MatchEvent[]; changes:{out:string;in:string}[]; seed:number; possession:number }
 const copy=<T,>(value:T):T=>structuredClone(value);
-const ownRoster=(g:Game)=>[...squadFor(g.club),...g.recruits];
+const ownRoster=currentRoster;
 export function eligibleLineup(g:Game):string[]{
   const available=ownRoster(g).filter(p=>!(g.discipline?.[p.id]?.ban));
   const ids=g.lineup.filter(id=>available.some(p=>p.id===id));

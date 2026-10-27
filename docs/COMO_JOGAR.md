@@ -1,3 +1,19 @@
+# Entrar no jogo — atualização v0.6
+
+1. Na tela inicial, clique em **Nova carreira**.
+2. Informe seu nome (2–32 caracteres), escolha um clube e um slot vazio.
+3. Clique em **Começar minha história**. O nome aparece no perfil e nos saves.
+4. Para voltar depois, use **Continuar carreira** ou **Minhas carreiras**.
+
+Há três slots independentes. Sua partida anterior fica no slot 1 e pede apenas
+um nome para o perfil. **Salvar agora** grava imediatamente; **Menu inicial**
+salva antes de sair. O botão de opções também oferece essas ações no celular.
+
+Em Minhas carreiras, importe JSON num slot vazio ou exporte um arquivo para
+backup. Liberar slot pede confirmação e guarda uma cópia local restaurável.
+O antigo botão Nova partida dentro do jogo reinicia apenas o slot ativo, depois
+de confirmação; para guardar outra carreira separada, use Nova carreira no menu.
+
 # TOUCHLINE — como jogar
 
 Abra o webapp e use os botões do menu. Todas as ações funcionam por clique.
@@ -90,8 +106,7 @@ mais público; o mais alto reduz a procura. O apoio também aumenta a demanda.
 O público respeita a capacidade e não é sorteado. O painel mostra a previsão.
 
 Nos jogos em casa, a renda bruta é público × ingresso. Jogos fora não geram
-bilheteria. Toda rodada acrescenta R$ 2.500 de cota e desconta até R$ 4.500 de
-operação/salários. A cobrança é limitada ao saldo disponível; não há dívida.
+bilheteria. Toda rodada acrescenta R$ 2.500 de cota e cobra R$ 900 mais a folha do elenco. Cada atleta original ou da várzea custa R$ 200 por rodada; agentes livres têm salário próprio. O saldo não pago fica pendente, bloqueia contratações e é cobrado junto da próxima rodada, sem juros.
 O extrato mostra os últimos lançamentos e o save guarda até 80.
 
 | Melhoria | Preço do próximo nível | Efeito |
@@ -151,3 +166,20 @@ ou IA tática individual. A formação escolhida aparece no posicionamento visua
 o motor ainda não calcula instruções táticas individuais.
 Ainda não há acréscimos, lesões, prorrogação, disputa de pênaltis, contratos
 individuais, mercado entre clubes, envelhecimento, multiplayer ou contas online.
+
+
+## Diretoria esportiva — v0.5
+
+Entre pelo menu ou por **Mercado & talentos** em Ambientes. Compare posição,
+força e custo de cada agente livre; a contratação exige taxa e reserva de três
+salários no caixa. As janelas são rodadas 1–4 e 12–14. Negociações e desenvolvimento
+ficam bloqueados durante a partida. Revise e confirme cada compra ou venda.
+
+Em **Lapidar talento**, selecione um foco e prepare treino em Mundo do futebol.
+Escalar esse jogador rende 35 pontos quando a partida acaba; treino rende 15,
+mais 5 por nível do CT e 5 se confiança ≥65. A cada 100 pontos, +1 de força
+permanente, até o potencial. Reservas também ganham os pontos do treino.
+
+A tela mostra folha, despesas pendentes, projeção da próxima rodada e adversário.
+Títulos e premiações encerram o ciclo de temporada. Regras completas e limites
+em MANAGER_DESIGN.md.
